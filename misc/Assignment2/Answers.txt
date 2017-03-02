@@ -1,0 +1,1917 @@
+Script started on Thu 02 Mar 2017 09:42:24 AM EST
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ ifvong[Kfig[Ponfig onfigconfig
+> 
+> ^C
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ ifconfig
+eth0      Link encap:Ethernet  HWaddr b8:27:eb:80:3b:83  
+          inet6 addr: fe80::521d:51a:1efd:296/64 Scope:Link
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:72 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:72 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1 
+          RX bytes:6288 (6.1 KiB)  TX bytes:6288 (6.1 KiB)
+
+wlan0     Link encap:Ethernet  HWaddr b8:27:eb:d5:6e:d6  
+          inet addr:137.140.181.65  Bcast:137.140.183.255  Mask:255.255.252.0
+          inet6 addr: fe80::e637:a8e9:412f:1f9b/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:4466 errors:0 dropped:52 overruns:0 frame:0
+          TX packets:256 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:945234 (923.0 KiB)  TX bytes:34551 (33.7 KiB)
+
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        30G  4.1G   24G  15% /
+devtmpfs        459M     0  459M   0% /dev
+tmpfs           463M     0  463M   0% /dev/shm
+tmpfs           463M  6.3M  457M   2% /run
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           463M     0  463M   0% /sys/fs/cgroup
+/dev/mmcblk0p1   63M   21M   42M  33% /boot
+tmpfs            93M     0   93M   0% /run/user/1000
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ du sh[Kk `[K~/
+du: cannot access ‘sk’: No such file or directory
+40	/home/pi/.themes/PiX/openbox-3
+16	/home/pi/.themes/PiX/gtk-2.0/Shadows
+68	/home/pi/.themes/PiX/gtk-2.0/Check-Radio
+12	/home/pi/.themes/PiX/gtk-2.0/Menu-Menubar
+140	/home/pi/.themes/PiX/gtk-2.0/Entry
+20	/home/pi/.themes/PiX/gtk-2.0/ProgressBar
+36	/home/pi/.themes/PiX/gtk-2.0/Buttons
+36	/home/pi/.themes/PiX/gtk-2.0/Spin
+84	/home/pi/.themes/PiX/gtk-2.0/Arrows
+12	/home/pi/.themes/PiX/gtk-2.0/Handles
+28	/home/pi/.themes/PiX/gtk-2.0/Range
+16	/home/pi/.themes/PiX/gtk-2.0/Lines
+8	/home/pi/.themes/PiX/gtk-2.0/Toolbar
+48	/home/pi/.themes/PiX/gtk-2.0/Tabs
+44	/home/pi/.themes/PiX/gtk-2.0/Scrollbars
+20	/home/pi/.themes/PiX/gtk-2.0/Others
+12	/home/pi/.themes/PiX/gtk-2.0/Expanders
+632	/home/pi/.themes/PiX/gtk-2.0
+1336	/home/pi/.themes/PiX/gtk-3.0/assets
+2112	/home/pi/.themes/PiX/gtk-3.0
+2792	/home/pi/.themes/PiX
+2796	/home/pi/.themes
+4	/home/pi/Desktop
+40	/home/pi/oldconffiles/.themes/PiX/openbox-3
+16	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Shadows
+68	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Check-Radio
+12	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Menu-Menubar
+140	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Entry
+20	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/ProgressBar
+36	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Buttons
+36	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Spin
+84	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Arrows
+12	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Handles
+28	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Range
+16	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Lines
+8	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Toolbar
+48	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Tabs
+44	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Scrollbars
+20	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Others
+12	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Expanders
+632	/home/pi/oldconffiles/.themes/PiX/gtk-2.0
+1336	/home/pi/oldconffiles/.themes/PiX/gtk-3.0/assets
+2112	/home/pi/oldconffiles/.themes/PiX/gtk-3.0
+2792	/home/pi/oldconffiles/.themes/PiX
+2796	/home/pi/oldconffiles/.themes
+12	/home/pi/oldconffiles/.config/pcmanfm/LXDE-pi
+16	/home/pi/oldconffiles/.config/pcmanfm
+8	/home/pi/oldconffiles/.config/lxsession/LXDE-pi
+12	/home/pi/oldconffiles/.config/lxsession
+8	/home/pi/oldconffiles/.config/gtk-3.0
+40	/home/pi/oldconffiles/.config
+2840	/home/pi/oldconffiles
+1804	/home/pi/python_games
+4	/home/pi/Public
+4	/home/pi/Videos
+36	/home/pi/.cache/menus
+36	/home/pi/.cache/chromium/Default/Cache/index-dir
+238668	/home/pi/.cache/chromium/Default/Cache
+238672	/home/pi/.cache/chromium/Default
+238676	/home/pi/.cache/chromium
+4	/home/pi/.cache/openbox/sessions
+12	/home/pi/.cache/openbox
+16	/home/pi/.cache/lxsession/LXDE-pi
+20	/home/pi/.cache/lxsession
+238748	/home/pi/.cache
+4	/home/pi/Templates
+32	/home/pi/.pki/nssdb
+36	/home/pi/.pki
+4	/home/pi/ELSpring2017-1/.git/branches
+8	/home/pi/ELSpring2017-1/.git/logs/refs/remotes/origin
+12	/home/pi/ELSpring2017-1/.git/logs/refs/remotes
+8	/home/pi/ELSpring2017-1/.git/logs/refs/heads
+24	/home/pi/ELSpring2017-1/.git/logs/refs
+32	/home/pi/ELSpring2017-1/.git/logs
+8	/home/pi/ELSpring2017-1/.git/info
+44	/home/pi/ELSpring2017-1/.git/hooks
+8	/home/pi/ELSpring2017-1/.git/objects/19
+8	/home/pi/ELSpring2017-1/.git/objects/08
+8	/home/pi/ELSpring2017-1/.git/objects/6e
+8	/home/pi/ELSpring2017-1/.git/objects/1e
+8	/home/pi/ELSpring2017-1/.git/objects/1a
+8	/home/pi/ELSpring2017-1/.git/objects/64
+8	/home/pi/ELSpring2017-1/.git/objects/f8
+12	/home/pi/ELSpring2017-1/.git/objects/14
+8	/home/pi/ELSpring2017-1/.git/objects/e6
+8	/home/pi/ELSpring2017-1/.git/objects/82
+8	/home/pi/ELSpring2017-1/.git/objects/ef
+4	/home/pi/ELSpring2017-1/.git/objects/pack
+8	/home/pi/ELSpring2017-1/.git/objects/da
+8	/home/pi/ELSpring2017-1/.git/objects/56
+8	/home/pi/ELSpring2017-1/.git/objects/30
+8	/home/pi/ELSpring2017-1/.git/objects/a0
+8	/home/pi/ELSpring2017-1/.git/objects/cc
+8	/home/pi/ELSpring2017-1/.git/objects/e3
+8	/home/pi/ELSpring2017-1/.git/objects/d0
+8	/home/pi/ELSpring2017-1/.git/objects/e0
+8	/home/pi/ELSpring2017-1/.git/objects/72
+16	/home/pi/ELSpring2017-1/.git/objects/8a
+8	/home/pi/ELSpring2017-1/.git/objects/12
+4	/home/pi/ELSpring2017-1/.git/objects/info
+8	/home/pi/ELSpring2017-1/.git/objects/5a
+8	/home/pi/ELSpring2017-1/.git/objects/42
+8	/home/pi/ELSpring2017-1/.git/objects/5c
+8	/home/pi/ELSpring2017-1/.git/objects/85
+8	/home/pi/ELSpring2017-1/.git/objects/0e
+8	/home/pi/ELSpring2017-1/.git/objects/ca
+8	/home/pi/ELSpring2017-1/.git/objects/fb
+8	/home/pi/ELSpring2017-1/.git/objects/31
+8	/home/pi/ELSpring2017-1/.git/objects/b9
+8	/home/pi/ELSpring2017-1/.git/objects/98
+8	/home/pi/ELSpring2017-1/.git/objects/95
+8	/home/pi/ELSpring2017-1/.git/objects/22
+12	/home/pi/ELSpring2017-1/.git/objects/ff
+8	/home/pi/ELSpring2017-1/.git/objects/dd
+8	/home/pi/ELSpring2017-1/.git/objects/71
+8	/home/pi/ELSpring2017-1/.git/objects/46
+8	/home/pi/ELSpring2017-1/.git/objects/c7
+12	/home/pi/ELSpring2017-1/.git/objects/88
+352	/home/pi/ELSpring2017-1/.git/objects
+4	/home/pi/ELSpring2017-1/.git/refs/tags
+8	/home/pi/ELSpring2017-1/.git/refs/remotes/origin
+12	/home/pi/ELSpring2017-1/.git/refs/remotes
+8	/home/pi/ELSpring2017-1/.git/refs/heads
+28	/home/pi/ELSpring2017-1/.git/refs
+492	/home/pi/ELSpring2017-1/.git
+8	/home/pi/ELSpring2017-1/misc/Assignment2
+16	/home/pi/ELSpring2017-1/misc
+8	/home/pi/ELSpring2017-1/code
+8	/home/pi/ELSpring2017-1/doc
+532	/home/pi/ELSpring2017-1
+4	/home/pi/Music
+4	/home/pi/Pictures
+2280	/home/pi/Documents/Scratch Projects
+16	/home/pi/Documents/BlueJ Projects/appletdemo
+32	/home/pi/Documents/BlueJ Projects/shapes
+16	/home/pi/Documents/BlueJ Projects/hello
+36	/home/pi/Documents/BlueJ Projects/picture
+20	/home/pi/Documents/BlueJ Projects/file-reader
+60	/home/pi/Documents/BlueJ Projects/people
+32	/home/pi/Documents/BlueJ Projects/people2
+20	/home/pi/Documents/BlueJ Projects/debugdemo
+48	/home/pi/Documents/BlueJ Projects/LED-Button
+360	/home/pi/Documents/BlueJ Projects
+264	/home/pi/Documents/Greenfoot Projects/scenarios/LTA/images
+4	/home/pi/Documents/Greenfoot Projects/scenarios/LTA/sounds
+288	/home/pi/Documents/Greenfoot Projects/scenarios/LTA
+44	/home/pi/Documents/Greenfoot Projects/scenarios/ants/images
+4	/home/pi/Documents/Greenfoot Projects/scenarios/ants/sounds
+92	/home/pi/Documents/Greenfoot Projects/scenarios/ants
+40	/home/pi/Documents/Greenfoot Projects/scenarios/lunarlander/images
+88	/home/pi/Documents/Greenfoot Projects/scenarios/lunarlander/sounds
+156	/home/pi/Documents/Greenfoot Projects/scenarios/lunarlander
+540	/home/pi/Documents/Greenfoot Projects/scenarios
+256	/home/pi/Documents/Greenfoot Projects/tutorial/tutorial-files
+312	/home/pi/Documents/Greenfoot Projects/tutorial
+28	/home/pi/Documents/Greenfoot Projects/API/resources
+204	/home/pi/Documents/Greenfoot Projects/API/greenfoot
+340	/home/pi/Documents/Greenfoot Projects/API
+1284	/home/pi/Documents/Greenfoot Projects
+3928	/home/pi/Documents
+4	/home/pi/Downloads
+4	/home/pi/.gconf
+8	/home/pi/.vnc/config.d
+12	/home/pi/.vnc
+92	/home/pi/.gstreamer-0.10
+4	/home/pi/.local/share/desktop-directories
+28	/home/pi/.local/share/xorg
+4	/home/pi/.local/share/applications
+40	/home/pi/.local/share
+44	/home/pi/.local
+48	/home/pi/.config/pulse
+12	/home/pi/.config/pcmanfm/LXDE-pi
+16	/home/pi/.config/pcmanfm
+44	/home/pi/.config/chromium/ShaderCache/GPUCache
+48	/home/pi/.config/chromium/ShaderCache
+44	/home/pi/.config/chromium/Default/GPUCache
+28	/home/pi/.config/chromium/Default/Session Storage
+20	/home/pi/.config/chromium/Default/Local Storage
+248	/home/pi/.config/chromium/Default/Extension State
+12	/home/pi/.config/chromium/Default/databases
+24	/home/pi/.config/chromium/Default/Local Extension Settings/pafkbggdmjlpgkdkcbjmhmfcdpncadgh
+1920	/home/pi/.config/chromium/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm
+20	/home/pi/.config/chromium/Default/Local Extension Settings/aleakchihdccplidncghkekgioiakgal
+1968	/home/pi/.config/chromium/Default/Local Extension Settings
+20	/home/pi/.config/chromium/Default/Extension Rules
+20	/home/pi/.config/chromium/Default/Thumbnails
+24	/home/pi/.config/chromium/Default/Managed Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm
+28	/home/pi/.config/chromium/Default/Managed Extension Settings
+2436	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/assets/thirdparties/easylist-downloads.adblockplus.org
+276	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/assets/thirdparties/mirror1.malwaredomains.com/files
+280	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/assets/thirdparties/mirror1.malwaredomains.com
+196	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/assets/thirdparties/publicsuffix.org/list
+200	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/assets/thirdparties/publicsuffix.org
+48	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/assets/thirdparties/www.malwaredomainlist.com/hostslist
+52	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/assets/thirdparties/www.malwaredomainlist.com
+72	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/assets/thirdparties/pgl.yoyo.org/as
+76	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/assets/thirdparties/pgl.yoyo.org
+3048	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/assets/thirdparties
+144	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/assets/ublock
+3200	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/assets
+124	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/js/scriptlets
+1048	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/js
+48	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/lib
+124	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/css/fonts
+208	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/css
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_metadata
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/ko
+40	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/bn
+36	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/ar
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/de
+36	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/sr
+40	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/ta
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/zh_CN
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/no
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/fil
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/sl
+36	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/mr
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/id
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/pt_BR
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/da
+36	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/uk
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/sv
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/gl
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/ro
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/hr
+36	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/ru
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/ja
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/vi
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/et
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/es
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/nb
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/he
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/lv
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/fi
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/tr
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/sq
+40	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/te
+36	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/hi
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/hu
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/pl
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/cv
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/nl
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/ca
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/sk
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/lt
+36	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/fa
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/zh_TW
+36	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/el
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/eu
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/fr
+36	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/bg
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/cs
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/it
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/fy
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/pt_PT
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/en
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/eo
+1696	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales
+20	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/img/browsericons
+48	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/img
+6404	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0
+6408	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm
+108	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/images
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/html
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/css
+16	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_metadata
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/ko
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/de
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/sr
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/zh_CN
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/fil
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/sl
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/id
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/th
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/pt_BR
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/da
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/uk
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/sv
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/en_GB
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/ro
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/hr
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/ru
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/ja
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/vi
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/et
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/es
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/nb
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/lv
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/fi
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/es_419
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/tr
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/hi
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/hu
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/pl
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/nl
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/ca
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/sk
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/lt
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/zh_TW
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/el
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/fr
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/bg
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/cs
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/it
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/pt_PT
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/en
+324	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales
+908	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0
+912	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda
+512	/home/pi/.config/chromium/Default/Extensions/aleakchihdccplidncghkekgioiakgal/1.0.4_0/noncode
+12	/home/pi/.config/chromium/Default/Extensions/aleakchihdccplidncghkekgioiakgal/1.0.4_0/src/inject
+16	/home/pi/.config/chromium/Default/Extensions/aleakchihdccplidncghkekgioiakgal/1.0.4_0/src
+36	/home/pi/.config/chromium/Default/Extensions/aleakchihdccplidncghkekgioiakgal/1.0.4_0/icons
+8	/home/pi/.config/chromium/Default/Extensions/aleakchihdccplidncghkekgioiakgal/1.0.4_0/_metadata
+596	/home/pi/.config/chromium/Default/Extensions/aleakchihdccplidncghkekgioiakgal/1.0.4_0
+600	/home/pi/.config/chromium/Default/Extensions/aleakchihdccplidncghkekgioiakgal
+7924	/home/pi/.config/chromium/Default/Extensions
+24	/home/pi/.config/chromium/Default/Service Worker/Database
+8	/home/pi/.config/chromium/Default/Service Worker/ScriptCache/index-dir
+136	/home/pi/.config/chromium/Default/Service Worker/ScriptCache
+164	/home/pi/.config/chromium/Default/Service Worker
+20	/home/pi/.config/chromium/Default/data_reduction_proxy_leveldb
+11336	/home/pi/.config/chromium/Default
+60	/home/pi/.config/chromium/CertificateTransparency/293/_platform_specific/all/sths
+64	/home/pi/.config/chromium/CertificateTransparency/293/_platform_specific/all
+68	/home/pi/.config/chromium/CertificateTransparency/293/_platform_specific
+76	/home/pi/.config/chromium/CertificateTransparency/293
+80	/home/pi/.config/chromium/CertificateTransparency
+880	/home/pi/.config/chromium/Dictionaries
+664	/home/pi/.config/chromium/EVWhitelist/7/_platform_specific/all
+668	/home/pi/.config/chromium/EVWhitelist/7/_platform_specific
+8	/home/pi/.config/chromium/EVWhitelist/7/_metadata
+684	/home/pi/.config/chromium/EVWhitelist/7
+688	/home/pi/.config/chromium/EVWhitelist
+4	/home/pi/.config/chromium/Crash Reports
+34496	/home/pi/.config/chromium
+8	/home/pi/.config/lxterminal
+28	/home/pi/.config/openbox
+8	/home/pi/.config/lxpanel/LXDE-pi/panels
+16	/home/pi/.config/lxpanel/LXDE-pi
+24	/home/pi/.config/lxpanel
+16	/home/pi/.config/lxsession/LXDE-pi
+20	/home/pi/.config/lxsession
+12	/home/pi/.config/gtk-3.0
+4	/home/pi/.config/autostart
+34676	/home/pi/.config
+8	/home/pi/.dbus/session-bus
+12	/home/pi/.dbus
+290404	/home/pi/
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ du sk ~/[P ~/h ~/
+du: cannot access ‘sh’: No such file or directory
+40	/home/pi/.themes/PiX/openbox-3
+16	/home/pi/.themes/PiX/gtk-2.0/Shadows
+68	/home/pi/.themes/PiX/gtk-2.0/Check-Radio
+12	/home/pi/.themes/PiX/gtk-2.0/Menu-Menubar
+140	/home/pi/.themes/PiX/gtk-2.0/Entry
+20	/home/pi/.themes/PiX/gtk-2.0/ProgressBar
+36	/home/pi/.themes/PiX/gtk-2.0/Buttons
+36	/home/pi/.themes/PiX/gtk-2.0/Spin
+84	/home/pi/.themes/PiX/gtk-2.0/Arrows
+12	/home/pi/.themes/PiX/gtk-2.0/Handles
+28	/home/pi/.themes/PiX/gtk-2.0/Range
+16	/home/pi/.themes/PiX/gtk-2.0/Lines
+8	/home/pi/.themes/PiX/gtk-2.0/Toolbar
+48	/home/pi/.themes/PiX/gtk-2.0/Tabs
+44	/home/pi/.themes/PiX/gtk-2.0/Scrollbars
+20	/home/pi/.themes/PiX/gtk-2.0/Others
+12	/home/pi/.themes/PiX/gtk-2.0/Expanders
+632	/home/pi/.themes/PiX/gtk-2.0
+1336	/home/pi/.themes/PiX/gtk-3.0/assets
+2112	/home/pi/.themes/PiX/gtk-3.0
+2792	/home/pi/.themes/PiX
+2796	/home/pi/.themes
+4	/home/pi/Desktop
+40	/home/pi/oldconffiles/.themes/PiX/openbox-3
+16	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Shadows
+68	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Check-Radio
+12	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Menu-Menubar
+140	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Entry
+20	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/ProgressBar
+36	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Buttons
+36	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Spin
+84	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Arrows
+12	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Handles
+28	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Range
+16	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Lines
+8	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Toolbar
+48	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Tabs
+44	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Scrollbars
+20	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Others
+12	/home/pi/oldconffiles/.themes/PiX/gtk-2.0/Expanders
+632	/home/pi/oldconffiles/.themes/PiX/gtk-2.0
+1336	/home/pi/oldconffiles/.themes/PiX/gtk-3.0/assets
+2112	/home/pi/oldconffiles/.themes/PiX/gtk-3.0
+2792	/home/pi/oldconffiles/.themes/PiX
+2796	/home/pi/oldconffiles/.themes
+12	/home/pi/oldconffiles/.config/pcmanfm/LXDE-pi
+16	/home/pi/oldconffiles/.config/pcmanfm
+8	/home/pi/oldconffiles/.config/lxsession/LXDE-pi
+12	/home/pi/oldconffiles/.config/lxsession
+8	/home/pi/oldconffiles/.config/gtk-3.0
+40	/home/pi/oldconffiles/.config
+2840	/home/pi/oldconffiles
+1804	/home/pi/python_games
+4	/home/pi/Public
+4	/home/pi/Videos
+36	/home/pi/.cache/menus
+36	/home/pi/.cache/chromium/Default/Cache/index-dir
+238668	/home/pi/.cache/chromium/Default/Cache
+238672	/home/pi/.cache/chromium/Default
+238676	/home/pi/.cache/chromium
+4	/home/pi/.cache/openbox/sessions
+12	/home/pi/.cache/openbox
+16	/home/pi/.cache/lxsession/LXDE-pi
+20	/home/pi/.cache/lxsession
+238748	/home/pi/.cache
+4	/home/pi/Templates
+32	/home/pi/.pki/nssdb
+36	/home/pi/.pki
+4	/home/pi/ELSpring2017-1/.git/branches
+8	/home/pi/ELSpring2017-1/.git/logs/refs/remotes/origin
+12	/home/pi/ELSpring2017-1/.git/logs/refs/remotes
+8	/home/pi/ELSpring2017-1/.git/logs/refs/heads
+24	/home/pi/ELSpring2017-1/.git/logs/refs
+32	/home/pi/ELSpring2017-1/.git/logs
+8	/home/pi/ELSpring2017-1/.git/info
+44	/home/pi/ELSpring2017-1/.git/hooks
+8	/home/pi/ELSpring2017-1/.git/objects/19
+8	/home/pi/ELSpring2017-1/.git/objects/08
+8	/home/pi/ELSpring2017-1/.git/objects/6e
+8	/home/pi/ELSpring2017-1/.git/objects/1e
+8	/home/pi/ELSpring2017-1/.git/objects/1a
+8	/home/pi/ELSpring2017-1/.git/objects/64
+8	/home/pi/ELSpring2017-1/.git/objects/f8
+12	/home/pi/ELSpring2017-1/.git/objects/14
+8	/home/pi/ELSpring2017-1/.git/objects/e6
+8	/home/pi/ELSpring2017-1/.git/objects/82
+8	/home/pi/ELSpring2017-1/.git/objects/ef
+4	/home/pi/ELSpring2017-1/.git/objects/pack
+8	/home/pi/ELSpring2017-1/.git/objects/da
+8	/home/pi/ELSpring2017-1/.git/objects/56
+8	/home/pi/ELSpring2017-1/.git/objects/30
+8	/home/pi/ELSpring2017-1/.git/objects/a0
+8	/home/pi/ELSpring2017-1/.git/objects/cc
+8	/home/pi/ELSpring2017-1/.git/objects/e3
+8	/home/pi/ELSpring2017-1/.git/objects/d0
+8	/home/pi/ELSpring2017-1/.git/objects/e0
+8	/home/pi/ELSpring2017-1/.git/objects/72
+16	/home/pi/ELSpring2017-1/.git/objects/8a
+8	/home/pi/ELSpring2017-1/.git/objects/12
+4	/home/pi/ELSpring2017-1/.git/objects/info
+8	/home/pi/ELSpring2017-1/.git/objects/5a
+8	/home/pi/ELSpring2017-1/.git/objects/42
+8	/home/pi/ELSpring2017-1/.git/objects/5c
+8	/home/pi/ELSpring2017-1/.git/objects/85
+8	/home/pi/ELSpring2017-1/.git/objects/0e
+8	/home/pi/ELSpring2017-1/.git/objects/ca
+8	/home/pi/ELSpring2017-1/.git/objects/fb
+8	/home/pi/ELSpring2017-1/.git/objects/31
+8	/home/pi/ELSpring2017-1/.git/objects/b9
+8	/home/pi/ELSpring2017-1/.git/objects/98
+8	/home/pi/ELSpring2017-1/.git/objects/95
+8	/home/pi/ELSpring2017-1/.git/objects/22
+12	/home/pi/ELSpring2017-1/.git/objects/ff
+8	/home/pi/ELSpring2017-1/.git/objects/dd
+8	/home/pi/ELSpring2017-1/.git/objects/71
+8	/home/pi/ELSpring2017-1/.git/objects/46
+8	/home/pi/ELSpring2017-1/.git/objects/c7
+12	/home/pi/ELSpring2017-1/.git/objects/88
+352	/home/pi/ELSpring2017-1/.git/objects
+4	/home/pi/ELSpring2017-1/.git/refs/tags
+8	/home/pi/ELSpring2017-1/.git/refs/remotes/origin
+12	/home/pi/ELSpring2017-1/.git/refs/remotes
+8	/home/pi/ELSpring2017-1/.git/refs/heads
+28	/home/pi/ELSpring2017-1/.git/refs
+492	/home/pi/ELSpring2017-1/.git
+32	/home/pi/ELSpring2017-1/misc/Assignment2
+40	/home/pi/ELSpring2017-1/misc
+8	/home/pi/ELSpring2017-1/code
+8	/home/pi/ELSpring2017-1/doc
+556	/home/pi/ELSpring2017-1
+4	/home/pi/Music
+4	/home/pi/Pictures
+2280	/home/pi/Documents/Scratch Projects
+16	/home/pi/Documents/BlueJ Projects/appletdemo
+32	/home/pi/Documents/BlueJ Projects/shapes
+16	/home/pi/Documents/BlueJ Projects/hello
+36	/home/pi/Documents/BlueJ Projects/picture
+20	/home/pi/Documents/BlueJ Projects/file-reader
+60	/home/pi/Documents/BlueJ Projects/people
+32	/home/pi/Documents/BlueJ Projects/people2
+20	/home/pi/Documents/BlueJ Projects/debugdemo
+48	/home/pi/Documents/BlueJ Projects/LED-Button
+360	/home/pi/Documents/BlueJ Projects
+264	/home/pi/Documents/Greenfoot Projects/scenarios/LTA/images
+4	/home/pi/Documents/Greenfoot Projects/scenarios/LTA/sounds
+288	/home/pi/Documents/Greenfoot Projects/scenarios/LTA
+44	/home/pi/Documents/Greenfoot Projects/scenarios/ants/images
+4	/home/pi/Documents/Greenfoot Projects/scenarios/ants/sounds
+92	/home/pi/Documents/Greenfoot Projects/scenarios/ants
+40	/home/pi/Documents/Greenfoot Projects/scenarios/lunarlander/images
+88	/home/pi/Documents/Greenfoot Projects/scenarios/lunarlander/sounds
+156	/home/pi/Documents/Greenfoot Projects/scenarios/lunarlander
+540	/home/pi/Documents/Greenfoot Projects/scenarios
+256	/home/pi/Documents/Greenfoot Projects/tutorial/tutorial-files
+312	/home/pi/Documents/Greenfoot Projects/tutorial
+28	/home/pi/Documents/Greenfoot Projects/API/resources
+204	/home/pi/Documents/Greenfoot Projects/API/greenfoot
+340	/home/pi/Documents/Greenfoot Projects/API
+1284	/home/pi/Documents/Greenfoot Projects
+3928	/home/pi/Documents
+4	/home/pi/Downloads
+4	/home/pi/.gconf
+8	/home/pi/.vnc/config.d
+12	/home/pi/.vnc
+92	/home/pi/.gstreamer-0.10
+4	/home/pi/.local/share/desktop-directories
+28	/home/pi/.local/share/xorg
+4	/home/pi/.local/share/applications
+40	/home/pi/.local/share
+44	/home/pi/.local
+48	/home/pi/.config/pulse
+12	/home/pi/.config/pcmanfm/LXDE-pi
+16	/home/pi/.config/pcmanfm
+44	/home/pi/.config/chromium/ShaderCache/GPUCache
+48	/home/pi/.config/chromium/ShaderCache
+44	/home/pi/.config/chromium/Default/GPUCache
+28	/home/pi/.config/chromium/Default/Session Storage
+20	/home/pi/.config/chromium/Default/Local Storage
+248	/home/pi/.config/chromium/Default/Extension State
+12	/home/pi/.config/chromium/Default/databases
+24	/home/pi/.config/chromium/Default/Local Extension Settings/pafkbggdmjlpgkdkcbjmhmfcdpncadgh
+1920	/home/pi/.config/chromium/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm
+20	/home/pi/.config/chromium/Default/Local Extension Settings/aleakchihdccplidncghkekgioiakgal
+1968	/home/pi/.config/chromium/Default/Local Extension Settings
+20	/home/pi/.config/chromium/Default/Extension Rules
+20	/home/pi/.config/chromium/Default/Thumbnails
+24	/home/pi/.config/chromium/Default/Managed Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm
+28	/home/pi/.config/chromium/Default/Managed Extension Settings
+2436	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/assets/thirdparties/easylist-downloads.adblockplus.org
+276	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/assets/thirdparties/mirror1.malwaredomains.com/files
+280	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/assets/thirdparties/mirror1.malwaredomains.com
+196	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/assets/thirdparties/publicsuffix.org/list
+200	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/assets/thirdparties/publicsuffix.org
+48	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/assets/thirdparties/www.malwaredomainlist.com/hostslist
+52	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/assets/thirdparties/www.malwaredomainlist.com
+72	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/assets/thirdparties/pgl.yoyo.org/as
+76	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/assets/thirdparties/pgl.yoyo.org
+3048	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/assets/thirdparties
+144	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/assets/ublock
+3200	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/assets
+124	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/js/scriptlets
+1048	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/js
+48	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/lib
+124	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/css/fonts
+208	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/css
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_metadata
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/ko
+40	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/bn
+36	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/ar
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/de
+36	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/sr
+40	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/ta
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/zh_CN
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/no
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/fil
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/sl
+36	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/mr
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/id
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/pt_BR
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/da
+36	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/uk
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/sv
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/gl
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/ro
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/hr
+36	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/ru
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/ja
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/vi
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/et
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/es
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/nb
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/he
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/lv
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/fi
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/tr
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/sq
+40	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/te
+36	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/hi
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/hu
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/pl
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/cv
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/nl
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/ca
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/sk
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/lt
+36	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/fa
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/zh_TW
+36	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/el
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/eu
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/fr
+36	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/bg
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/cs
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/it
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/fy
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/pt_PT
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/en
+32	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales/eo
+1696	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/_locales
+20	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/img/browsericons
+48	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0/img
+6404	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.10.4_0
+6408	/home/pi/.config/chromium/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm
+108	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/images
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/html
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/css
+16	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_metadata
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/ko
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/de
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/sr
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/zh_CN
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/fil
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/sl
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/id
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/th
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/pt_BR
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/da
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/uk
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/sv
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/en_GB
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/ro
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/hr
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/ru
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/ja
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/vi
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/et
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/es
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/nb
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/lv
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/fi
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/es_419
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/tr
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/hi
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/hu
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/pl
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/nl
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/ca
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/sk
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/lt
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/zh_TW
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/el
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/fr
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/bg
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/cs
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/it
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/pt_PT
+8	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales/en
+324	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0/_locales
+908	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.1_0
+912	/home/pi/.config/chromium/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda
+512	/home/pi/.config/chromium/Default/Extensions/aleakchihdccplidncghkekgioiakgal/1.0.4_0/noncode
+12	/home/pi/.config/chromium/Default/Extensions/aleakchihdccplidncghkekgioiakgal/1.0.4_0/src/inject
+16	/home/pi/.config/chromium/Default/Extensions/aleakchihdccplidncghkekgioiakgal/1.0.4_0/src
+36	/home/pi/.config/chromium/Default/Extensions/aleakchihdccplidncghkekgioiakgal/1.0.4_0/icons
+8	/home/pi/.config/chromium/Default/Extensions/aleakchihdccplidncghkekgioiakgal/1.0.4_0/_metadata
+596	/home/pi/.config/chromium/Default/Extensions/aleakchihdccplidncghkekgioiakgal/1.0.4_0
+600	/home/pi/.config/chromium/Default/Extensions/aleakchihdccplidncghkekgioiakgal
+7924	/home/pi/.config/chromium/Default/Extensions
+24	/home/pi/.config/chromium/Default/Service Worker/Database
+8	/home/pi/.config/chromium/Default/Service Worker/ScriptCache/index-dir
+136	/home/pi/.config/chromium/Default/Service Worker/ScriptCache
+164	/home/pi/.config/chromium/Default/Service Worker
+20	/home/pi/.config/chromium/Default/data_reduction_proxy_leveldb
+11336	/home/pi/.config/chromium/Default
+60	/home/pi/.config/chromium/CertificateTransparency/293/_platform_specific/all/sths
+64	/home/pi/.config/chromium/CertificateTransparency/293/_platform_specific/all
+68	/home/pi/.config/chromium/CertificateTransparency/293/_platform_specific
+76	/home/pi/.config/chromium/CertificateTransparency/293
+80	/home/pi/.config/chromium/CertificateTransparency
+880	/home/pi/.config/chromium/Dictionaries
+664	/home/pi/.config/chromium/EVWhitelist/7/_platform_specific/all
+668	/home/pi/.config/chromium/EVWhitelist/7/_platform_specific
+8	/home/pi/.config/chromium/EVWhitelist/7/_metadata
+684	/home/pi/.config/chromium/EVWhitelist/7
+688	/home/pi/.config/chromium/EVWhitelist
+4	/home/pi/.config/chromium/Crash Reports
+34496	/home/pi/.config/chromium
+8	/home/pi/.config/lxterminal
+28	/home/pi/.config/openbox
+8	/home/pi/.config/lxpanel/LXDE-pi/panels
+16	/home/pi/.config/lxpanel/LXDE-pi
+24	/home/pi/.config/lxpanel
+16	/home/pi/.config/lxsession/LXDE-pi
+20	/home/pi/.config/lxsession
+12	/home/pi/.config/gtk-3.0
+4	/home/pi/.config/autostart
+34676	/home/pi/.config
+8	/home/pi/.dbus/session-bus
+12	/home/pi/.dbus
+290428	/home/pi/
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ ps xa
+  PID TTY      STAT   TIME COMMAND
+    1 ?        Ss     0:05 /sbin/init
+    2 ?        S      0:00 [kthreadd]
+    3 ?        S      0:00 [ksoftirqd/0]
+    4 ?        S      0:00 [kworker/0:0]
+    5 ?        S<     0:00 [kworker/0:0H]
+    6 ?        S      0:00 [kworker/u8:0]
+    7 ?        S      0:00 [rcu_sched]
+    8 ?        S      0:00 [rcu_bh]
+    9 ?        S      0:00 [migration/0]
+   10 ?        S      0:00 [migration/1]
+   11 ?        S      0:00 [ksoftirqd/1]
+   13 ?        S<     0:00 [kworker/1:0H]
+   14 ?        S      0:00 [migration/2]
+   15 ?        S      0:00 [ksoftirqd/2]
+   17 ?        S<     0:00 [kworker/2:0H]
+   18 ?        S      0:00 [migration/3]
+   19 ?        S      0:00 [ksoftirqd/3]
+   21 ?        S<     0:00 [kworker/3:0H]
+   22 ?        S      0:00 [kdevtmpfs]
+   23 ?        S<     0:00 [netns]
+   24 ?        S<     0:00 [perf]
+   25 ?        S      0:00 [khungtaskd]
+   26 ?        S<     0:00 [writeback]
+   27 ?        S<     0:00 [crypto]
+   28 ?        S<     0:00 [bioset]
+   29 ?        S<     0:00 [kblockd]
+   31 ?        S<     0:00 [rpciod]
+   32 ?        S      0:00 [kswapd0]
+   33 ?        S<     0:00 [vmstat]
+   34 ?        S      0:00 [fsnotify_mark]
+   35 ?        S<     0:00 [nfsiod]
+   44 ?        S<     0:00 [kthrotld]
+   46 ?        S<     0:00 [bioset]
+   47 ?        S<     0:00 [bioset]
+   48 ?        S<     0:00 [bioset]
+   49 ?        S<     0:00 [bioset]
+   50 ?        S<     0:00 [bioset]
+   51 ?        S<     0:00 [bioset]
+   52 ?        S<     0:00 [bioset]
+   53 ?        S<     0:00 [bioset]
+   54 ?        S<     0:00 [bioset]
+   55 ?        S<     0:00 [bioset]
+   56 ?        S<     0:00 [bioset]
+   57 ?        S<     0:00 [bioset]
+   58 ?        S<     0:00 [bioset]
+   59 ?        S<     0:00 [bioset]
+   60 ?        S<     0:00 [bioset]
+   61 ?        S<     0:00 [bioset]
+   62 ?        S<     0:00 [bioset]
+   63 ?        S<     0:00 [bioset]
+   64 ?        S<     0:00 [bioset]
+   65 ?        S<     0:00 [bioset]
+   66 ?        S<     0:00 [bioset]
+   67 ?        S<     0:00 [bioset]
+   68 ?        S<     0:00 [bioset]
+   69 ?        S<     0:00 [bioset]
+   70 ?        S<     0:00 [VCHIQ-0]
+   71 ?        S<     0:00 [VCHIQr-0]
+   72 ?        S<     0:00 [VCHIQs-0]
+   73 ?        S<     0:00 [iscsi_eh]
+   74 ?        S<     0:00 [dwc_otg]
+   75 ?        S      0:00 [kworker/2:1]
+   76 ?        S<     0:00 [DWC Notificatio]
+   78 ?        S      0:00 [irq/92-mmc1]
+   79 ?        S<     0:00 [bioset]
+   80 ?        S      0:00 [mmcqd/0]
+   81 ?        S      0:00 [kworker/3:1]
+   82 ?        S      0:00 [VCHIQka-0]
+   83 ?        S<     0:00 [SMIO]
+   85 ?        S<     0:00 [deferwq]
+   86 ?        S      0:00 [jbd2/mmcblk0p2-]
+   87 ?        S<     0:00 [ext4-rsv-conver]
+   88 ?        S<     0:00 [ipv6_addrconf]
+  104 ?        S<     0:00 [kworker/2:1H]
+  117 ?        S      0:00 [kworker/u8:2]
+  128 ?        S      0:00 [kworker/3:2]
+  137 ?        Ss     0:00 /lib/systemd/systemd-journald
+  139 ?        Ss     0:00 /lib/systemd/systemd-udevd
+  185 ?        S      1:23 [w1_bus_master1]
+  209 ?        S      0:00 [kworker/1:2]
+  215 ?        S<     0:00 [cfg80211]
+  222 ?        S<     0:00 [brcmf_wq/mmc1:0]
+  226 ?        S      0:00 [brcmf_wdog/mmc1]
+  234 ?        S      0:00 [kworker/1:4]
+  404 ?        Ssl    0:00 /usr/sbin/rsyslogd -n
+  405 ?        Ss     0:00 /usr/sbin/cron -f
+  409 ?        Ss     0:00 avahi-daemon: running [raspberrypi.local]
+  416 ?        Ss     0:00 /usr/bin/dbus-daemon --system --address=systemd: --no
+  429 ?        Ss     0:00 /sbin/dhcpcd -q -b
+  434 ?        Ss     0:00 /usr/sbin/thd --daemon --triggers /etc/triggerhappy/t
+  440 ?        S      0:00 avahi-daemon: chroot helper
+  484 ?        Ss     0:00 /lib/systemd/systemd-logind
+  506 ?        Ss     0:00 /usr/sbin/sshd -D
+  537 ?        Ss     0:00 /sbin/wpa_supplicant -s -B -P /run/wpa_supplicant.wla
+  550 ?        S<     0:00 [kworker/3:1H]
+  575 ?        Ss     0:00 /usr/sbin/ntpd -p /var/run/ntpd.pid -g -u 106:111
+  616 tty1     Ss     0:00 /bin/login -f   
+  617 ?        Ss     0:00 /sbin/wpa_cli -B -P /run/wpa_action.wlan0.pid -i wlan
+  618 ttyS0    Ss     0:00 /bin/login --   
+  712 ?        S<     0:00 [kworker/0:1H]
+  745 ?        Ss     0:00 dhclient -v -pf /run/dhclient.wlan0.pid -lf /var/lib/
+  894 ?        S<     0:00 [kworker/u9:0]
+  895 ?        S<     0:00 [hci0]
+  896 ?        S<     0:00 [hci0]
+  897 ?        S<     0:00 [kworker/u9:1]
+  898 ?        S      0:00 /usr/bin/hciattach /dev/serial1 bcm43xx 921600 noflow
+  904 ?        Ss     0:00 /usr/lib/bluetooth/bluetoothd
+  924 ?        Ss     0:00 /lib/systemd/systemd --user
+  930 ?        S      0:00 (sd-pam)  
+  935 tty1     S+     0:00 -bash
+ 1194 ttyS0    S      0:00 -bash
+ 1266 ?        S      0:00 [kworker/u8:1]
+ 1270 ?        S      0:00 [kworker/2:2]
+ 1271 ?        S      0:00 [kworker/0:1]
+ 1297 ?        S      0:00 [kworker/3:0]
+ 1298 ttyS0    S+     0:00 script Answers.txt
+ 1299 ttyS0    S+     0:00 script Answers.txt
+ 1300 pts/0    Ss     0:00 bash -i
+ 1309 ?        S      0:00 [kworker/1:0]
+ 1314 ?        S      0:00 [kworker/u8:3]
+ 1316 ?        S      0:00 [kworker/0:2]
+ 1320 pts/0    R+     0:00 ps xa
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ date
+Thu Mar  2 09:44:34 EST 2017
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ who
+pi       ttyS0        2017-03-02 09:31
+pi       tty1         2017-02-23 10:17
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ whoai[Kmi
+pi
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ which python
+/usr/bin/python
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ which nano
+/usr/bin/nano
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ ls /sbin
+agetty           fsck.vfat          lsmod             resize2fs
+badblocks        fsfreeze           MAKEDEV           resolvconf
+blkdiscard       fstab-decode       mii-tool          rmmod
+blkid            fstrim             mkdosfs           route
+blockdev         getcap             mke2fs            rpcbind
+bridge           getpcaps           mkfs              rpc.statd
+capsh            getty              mkfs.bfs          rtacct
+cfdisk           halt               mkfs.cramfs       rtmon
+chcpu            hwclock            mkfs.ext2         runlevel
+crda             ifconfig           mkfs.ext3         runuser
+ctrlaltdel       ifdown             mkfs.ext4         setcap
+debugfs          ifquery            mkfs.ext4dev      sfdisk
+depmod           ifup               mkfs.fat          shadowconfig
+dhclient         init               mkfs.minix        showmount
+dhclient-script  insmod             mkfs.msdos        shutdown
+dhcpcd           insserv            mkfs.vfat         slattach
+dhcpcd5          installkernel      mkhomedir_helper  sm-notify
+dmsetup          ip                 mkswap            start-stop-daemon
+dosfsck          ip6tables          mntctl            sulogin
+dosfslabel       ip6tables-restore  modinfo           swaplabel
+dphys-swapfile   ip6tables-save     modprobe          swapoff
+dumpe2fs         ipmaddr            mountall          swapon
+e2fsck           iptables           mount.cifs        switch_root
+e2image          iptables-restore   mount.fuse        sysctl
+e2label          iptables-save      mount.nfs         tc
+e2undo           iptunnel           mount.nfs4        telinit
+fake-hwclock     isosize            nameif            tune2fs
+fatlabel         iw                 osd_login         udevadm
+fdisk            iwconfig           pam_tally         udevd
+findfs           iwevent            pam_tally2        umount.nfs
+fsck             iwgetid            parted            umount.nfs4
+fsck.cramfs      iwlist             partprobe         umount.udisks2
+fsck.ext2        iwpriv             pivot_root        unix_chkpwd
+fsck.ext3        iwspy              plipconfig        unix_update
+fsck.ext4        kbdrate            plymouthd         wipefs
+fsck.ext4dev     killall5           poweroff          wpa_action
+fsck.fat         ldconfig           rarp              wpa_cli
+fsck.minix       ldconfig.real      raw               wpa_supplicant
+fsck.msdos       logsave            reboot            xtables-multi
+fsck.nfs         losetup            regdbdump
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ lsmod
+Module                  Size  Used by
+bnep                   10340  2 
+hci_uart               17943  1 
+btbcm                   5929  1 hci_uart
+bluetooth             326105  22 bnep,btbcm,hci_uart
+brcmfmac              186403  0 
+brcmutil                5661  1 brcmfmac
+cfg80211              428431  1 brcmfmac
+rfkill                 16037  4 cfg80211,bluetooth
+snd_bcm2835            20447  0 
+snd_pcm                75762  1 snd_bcm2835
+snd_timer              19288  1 snd_pcm
+snd                    51908  3 snd_bcm2835,snd_timer,snd_pcm
+i2c_bcm2708             4834  0 
+bcm2835_gpiomem         3040  0 
+bcm2835_wdt             3225  0 
+w1_gpio                 3657  0 
+wire                   25219  1 w1_gpio
+cn                      4374  1 wire
+uio_pdrv_genirq         3164  0 
+uio                     8000  1 uio_pdrv_genirq
+i2c_dev                 5859  0 
+fuse                   84037  1 
+ipv6                  347594  32 
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ whih mount
+bash: whih: command not found
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ mount
+/dev/mmcblk0p2 on / type ext4 (rw,noatime,data=ordered)
+devtmpfs on /dev type devtmpfs (rw,relatime,size=469528k,nr_inodes=117382,mode=755)
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+proc on /proc type proc (rw,relatime)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,nodev,mode=755)
+tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)
+tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,mode=755)
+cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,release_agent=/lib/systemd/systemd-cgroups-agent,name=systemd)
+cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,cpu,cpuacct)
+cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,blkio)
+cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,memory)
+cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,devices)
+cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,freezer)
+cgroup on /sys/fs/cgroup/net_cls type cgroup (rw,nosuid,nodev,noexec,relatime,net_cls)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=22,pgrp=1,timeout=300,minproto=5,maxproto=5,direct)
+mqueue on /dev/mqueue type mqueue (rw,relatime)
+debugfs on /sys/kernel/debug type debugfs (rw,relatime)
+configfs on /sys/kernel/config type configfs (rw,relatime)
+fusectl on /sys/fs/fuse/connections type fusectl (rw,relatime)
+/dev/mmcblk0p1 on /boot type vfat (rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,errors=remount-ro)
+tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=94776k,mode=700,uid=1000,gid=1000)
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ which mount
+/bin/mount
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ which squilte
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ which squilte[K[K[K[K[Klite
+/usr/bin/sqlite
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ which sqlite3
+/usr/bin/sqlite3
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ sudo apt-get install sqlite3
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 1%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 77%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+sqlite3 is already the newest version.
+0 upgraded, 0 newly installed, 0 to remove and 23 not upgraded.
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ sudo apt-get install sqlite3[P[P[P[P[P[P[P[P[P[P[P[P[P[P[Pwhich[C[C[C[C[C[C[C[C
+/usr/bin/sqlite3
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ dpkg -l installed_packages.txt  >installed_packages.txt
+dpkg-query: no packages found matching installed_packages.txt
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ tail installed_packages.txt
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ wc -l installed_packages.txt
+0 installed_packages.txt
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ find / -iname 'syslog*'
+find: `/etc/ssl/private': Permission denied
+find: `/etc/polkit-1/localauthority': Permission denied
+/etc/systemd/system/syslog.service
+find: `/proc/tty/driver': Permission denied
+find: `/proc/1/task/1/fd': Permission denied
+find: `/proc/1/task/1/fdinfo': Permission denied
+find: `/proc/1/task/1/ns': Permission denied
+find: `/proc/1/fd': Permission denied
+find: `/proc/1/map_files': Permission denied
+find: `/proc/1/fdinfo': Permission denied
+find: `/proc/1/ns': Permission denied
+find: `/proc/2/task/2/fd': Permission denied
+find: `/proc/2/task/2/fdinfo': Permission denied
+find: `/proc/2/task/2/ns': Permission denied
+find: `/proc/2/fd': Permission denied
+find: `/proc/2/map_files': Permission denied
+find: `/proc/2/fdinfo': Permission denied
+find: `/proc/2/ns': Permission denied
+find: `/proc/3/task/3/fd': Permission denied
+find: `/proc/3/task/3/fdinfo': Permission denied
+find: `/proc/3/task/3/ns': Permission denied
+find: `/proc/3/fd': Permission denied
+find: `/proc/3/map_files': Permission denied
+find: `/proc/3/fdinfo': Permission denied
+find: `/proc/3/ns': Permission denied
+find: `/proc/4/task/4/fd': Permission denied
+find: `/proc/4/task/4/fdinfo': Permission denied
+find: `/proc/4/task/4/ns': Permission denied
+find: `/proc/4/fd': Permission denied
+find: `/proc/4/map_files': Permission denied
+find: `/proc/4/fdinfo': Permission denied
+find: `/proc/4/ns': Permission denied
+find: `/proc/5/task/5/fd': Permission denied
+find: `/proc/5/task/5/fdinfo': Permission denied
+find: `/proc/5/task/5/ns': Permission denied
+find: `/proc/5/fd': Permission denied
+find: `/proc/5/map_files': Permission denied
+find: `/proc/5/fdinfo': Permission denied
+find: `/proc/5/ns': Permission denied
+find: `/proc/6/task/6/fd': Permission denied
+find: `/proc/6/task/6/fdinfo': Permission denied
+find: `/proc/6/task/6/ns': Permission denied
+find: `/proc/6/fd': Permission denied
+find: `/proc/6/map_files': Permission denied
+find: `/proc/6/fdinfo': Permission denied
+find: `/proc/6/ns': Permission denied
+find: `/proc/7/task/7/fd': Permission denied
+find: `/proc/7/task/7/fdinfo': Permission denied
+find: `/proc/7/task/7/ns': Permission denied
+find: `/proc/7/fd': Permission denied
+find: `/proc/7/map_files': Permission denied
+find: `/proc/7/fdinfo': Permission denied
+find: `/proc/7/ns': Permission denied
+find: `/proc/8/task/8/fd': Permission denied
+find: `/proc/8/task/8/fdinfo': Permission denied
+find: `/proc/8/task/8/ns': Permission denied
+find: `/proc/8/fd': Permission denied
+find: `/proc/8/map_files': Permission denied
+find: `/proc/8/fdinfo': Permission denied
+find: `/proc/8/ns': Permission denied
+find: `/proc/9/task/9/fd': Permission denied
+find: `/proc/9/task/9/fdinfo': Permission denied
+find: `/proc/9/task/9/ns': Permission denied
+find: `/proc/9/fd': Permission denied
+find: `/proc/9/map_files': Permission denied
+find: `/proc/9/fdinfo': Permission denied
+find: `/proc/9/ns': Permission denied
+find: `/proc/10/task/10/fd': Permission denied
+find: `/proc/10/task/10/fdinfo': Permission denied
+find: `/proc/10/task/10/ns': Permission denied
+find: `/proc/10/fd': Permission denied
+find: `/proc/10/map_files': Permission denied
+find: `/proc/10/fdinfo': Permission denied
+find: `/proc/10/ns': Permission denied
+find: `/proc/11/task/11/fd': Permission denied
+find: `/proc/11/task/11/fdinfo': Permission denied
+find: `/proc/11/task/11/ns': Permission denied
+find: `/proc/11/fd': Permission denied
+find: `/proc/11/map_files': Permission denied
+find: `/proc/11/fdinfo': Permission denied
+find: `/proc/11/ns': Permission denied
+find: `/proc/13/task/13/fd': Permission denied
+find: `/proc/13/task/13/fdinfo': Permission denied
+find: `/proc/13/task/13/ns': Permission denied
+find: `/proc/13/fd': Permission denied
+find: `/proc/13/map_files': Permission denied
+find: `/proc/13/fdinfo': Permission denied
+find: `/proc/13/ns': Permission denied
+find: `/proc/14/task/14/fd': Permission denied
+find: `/proc/14/task/14/fdinfo': Permission denied
+find: `/proc/14/task/14/ns': Permission denied
+find: `/proc/14/fd': Permission denied
+find: `/proc/14/map_files': Permission denied
+find: `/proc/14/fdinfo': Permission denied
+find: `/proc/14/ns': Permission denied
+find: `/proc/15/task/15/fd': Permission denied
+find: `/proc/15/task/15/fdinfo': Permission denied
+find: `/proc/15/task/15/ns': Permission denied
+find: `/proc/15/fd': Permission denied
+find: `/proc/15/map_files': Permission denied
+find: `/proc/15/fdinfo': Permission denied
+find: `/proc/15/ns': Permission denied
+find: `/proc/17/task/17/fd': Permission denied
+find: `/proc/17/task/17/fdinfo': Permission denied
+find: `/proc/17/task/17/ns': Permission denied
+find: `/proc/17/fd': Permission denied
+find: `/proc/17/map_files': Permission denied
+find: `/proc/17/fdinfo': Permission denied
+find: `/proc/17/ns': Permission denied
+find: `/proc/18/task/18/fd': Permission denied
+find: `/proc/18/task/18/fdinfo': Permission denied
+find: `/proc/18/task/18/ns': Permission denied
+find: `/proc/18/fd': Permission denied
+find: `/proc/18/map_files': Permission denied
+find: `/proc/18/fdinfo': Permission denied
+find: `/proc/18/ns': Permission denied
+find: `/proc/19/task/19/fd': Permission denied
+find: `/proc/19/task/19/fdinfo': Permission denied
+find: `/proc/19/task/19/ns': Permission denied
+find: `/proc/19/fd': Permission denied
+find: `/proc/19/map_files': Permission denied
+find: `/proc/19/fdinfo': Permission denied
+find: `/proc/19/ns': Permission denied
+find: `/proc/21/task/21/fd': Permission denied
+find: `/proc/21/task/21/fdinfo': Permission denied
+find: `/proc/21/task/21/ns': Permission denied
+find: `/proc/21/fd': Permission denied
+find: `/proc/21/map_files': Permission denied
+find: `/proc/21/fdinfo': Permission denied
+find: `/proc/21/ns': Permission denied
+find: `/proc/22/task/22/fd': Permission denied
+find: `/proc/22/task/22/fdinfo': Permission denied
+find: `/proc/22/task/22/ns': Permission denied
+find: `/proc/22/fd': Permission denied
+find: `/proc/22/map_files': Permission denied
+find: `/proc/22/fdinfo': Permission denied
+find: `/proc/22/ns': Permission denied
+find: `/proc/23/task/23/fd': Permission denied
+find: `/proc/23/task/23/fdinfo': Permission denied
+find: `/proc/23/task/23/ns': Permission denied
+find: `/proc/23/fd': Permission denied
+find: `/proc/23/map_files': Permission denied
+find: `/proc/23/fdinfo': Permission denied
+find: `/proc/23/ns': Permission denied
+find: `/proc/24/task/24/fd': Permission denied
+find: `/proc/24/task/24/fdinfo': Permission denied
+find: `/proc/24/task/24/ns': Permission denied
+find: `/proc/24/fd': Permission denied
+find: `/proc/24/map_files': Permission denied
+find: `/proc/24/fdinfo': Permission denied
+find: `/proc/24/ns': Permission denied
+find: `/proc/25/task/25/fd': Permission denied
+find: `/proc/25/task/25/fdinfo': Permission denied
+find: `/proc/25/task/25/ns': Permission denied
+find: `/proc/25/fd': Permission denied
+find: `/proc/25/map_files': Permission denied
+find: `/proc/25/fdinfo': Permission denied
+find: `/proc/25/ns': Permission denied
+find: `/proc/26/task/26/fd': Permission denied
+find: `/proc/26/task/26/fdinfo': Permission denied
+find: `/proc/26/task/26/ns': Permission denied
+find: `/proc/26/fd': Permission denied
+find: `/proc/26/map_files': Permission denied
+find: `/proc/26/fdinfo': Permission denied
+find: `/proc/26/ns': Permission denied
+find: `/proc/27/task/27/fd': Permission denied
+find: `/proc/27/task/27/fdinfo': Permission denied
+find: `/proc/27/task/27/ns': Permission denied
+find: `/proc/27/fd': Permission denied
+find: `/proc/27/map_files': Permission denied
+find: `/proc/27/fdinfo': Permission denied
+find: `/proc/27/ns': Permission denied
+find: `/proc/28/task/28/fd': Permission denied
+find: `/proc/28/task/28/fdinfo': Permission denied
+find: `/proc/28/task/28/ns': Permission denied
+find: `/proc/28/fd': Permission denied
+find: `/proc/28/map_files': Permission denied
+find: `/proc/28/fdinfo': Permission denied
+find: `/proc/28/ns': Permission denied
+find: `/proc/29/task/29/fd': Permission denied
+find: `/proc/29/task/29/fdinfo': Permission denied
+find: `/proc/29/task/29/ns': Permission denied
+find: `/proc/29/fd': Permission denied
+find: `/proc/29/map_files': Permission denied
+find: `/proc/29/fdinfo': Permission denied
+find: `/proc/29/ns': Permission denied
+find: `/proc/31/task/31/fd': Permission denied
+find: `/proc/31/task/31/fdinfo': Permission denied
+find: `/proc/31/task/31/ns': Permission denied
+find: `/proc/31/fd': Permission denied
+find: `/proc/31/map_files': Permission denied
+find: `/proc/31/fdinfo': Permission denied
+find: `/proc/31/ns': Permission denied
+find: `/proc/32/task/32/fd': Permission denied
+find: `/proc/32/task/32/fdinfo': Permission denied
+find: `/proc/32/task/32/ns': Permission denied
+find: `/proc/32/fd': Permission denied
+find: `/proc/32/map_files': Permission denied
+find: `/proc/32/fdinfo': Permission denied
+find: `/proc/32/ns': Permission denied
+find: `/proc/33/task/33/fd': Permission denied
+find: `/proc/33/task/33/fdinfo': Permission denied
+find: `/proc/33/task/33/ns': Permission denied
+find: `/proc/33/fd': Permission denied
+find: `/proc/33/map_files': Permission denied
+find: `/proc/33/fdinfo': Permission denied
+find: `/proc/33/ns': Permission denied
+find: `/proc/34/task/34/fd': Permission denied
+find: `/proc/34/task/34/fdinfo': Permission denied
+find: `/proc/34/task/34/ns': Permission denied
+find: `/proc/34/fd': Permission denied
+find: `/proc/34/map_files': Permission denied
+find: `/proc/34/fdinfo': Permission denied
+find: `/proc/34/ns': Permission denied
+find: `/proc/35/task/35/fd': Permission denied
+find: `/proc/35/task/35/fdinfo': Permission denied
+find: `/proc/35/task/35/ns': Permission denied
+find: `/proc/35/fd': Permission denied
+find: `/proc/35/map_files': Permission denied
+find: `/proc/35/fdinfo': Permission denied
+find: `/proc/35/ns': Permission denied
+find: `/proc/44/task/44/fd': Permission denied
+find: `/proc/44/task/44/fdinfo': Permission denied
+find: `/proc/44/task/44/ns': Permission denied
+find: `/proc/44/fd': Permission denied
+find: `/proc/44/map_files': Permission denied
+find: `/proc/44/fdinfo': Permission denied
+find: `/proc/44/ns': Permission denied
+find: `/proc/46/task/46/fd': Permission denied
+find: `/proc/46/task/46/fdinfo': Permission denied
+find: `/proc/46/task/46/ns': Permission denied
+find: `/proc/46/fd': Permission denied
+find: `/proc/46/map_files': Permission denied
+find: `/proc/46/fdinfo': Permission denied
+find: `/proc/46/ns': Permission denied
+find: `/proc/47/task/47/fd': Permission denied
+find: `/proc/47/task/47/fdinfo': Permission denied
+find: `/proc/47/task/47/ns': Permission denied
+find: `/proc/47/fd': Permission denied
+find: `/proc/47/map_files': Permission denied
+find: `/proc/47/fdinfo': Permission denied
+find: `/proc/47/ns': Permission denied
+find: `/proc/48/task/48/fd': Permission denied
+find: `/proc/48/task/48/fdinfo': Permission denied
+find: `/proc/48/task/48/ns': Permission denied
+find: `/proc/48/fd': Permission denied
+find: `/proc/48/map_files': Permission denied
+find: `/proc/48/fdinfo': Permission denied
+find: `/proc/48/ns': Permission denied
+find: `/proc/49/task/49/fd': Permission denied
+find: `/proc/49/task/49/fdinfo': Permission denied
+find: `/proc/49/task/49/ns': Permission denied
+find: `/proc/49/fd': Permission denied
+find: `/proc/49/map_files': Permission denied
+find: `/proc/49/fdinfo': Permission denied
+find: `/proc/49/ns': Permission denied
+find: `/proc/50/task/50/fd': Permission denied
+find: `/proc/50/task/50/fdinfo': Permission denied
+find: `/proc/50/task/50/ns': Permission denied
+find: `/proc/50/fd': Permission denied
+find: `/proc/50/map_files': Permission denied
+find: `/proc/50/fdinfo': Permission denied
+find: `/proc/50/ns': Permission denied
+find: `/proc/51/task/51/fd': Permission denied
+find: `/proc/51/task/51/fdinfo': Permission denied
+find: `/proc/51/task/51/ns': Permission denied
+find: `/proc/51/fd': Permission denied
+find: `/proc/51/map_files': Permission denied
+find: `/proc/51/fdinfo': Permission denied
+find: `/proc/51/ns': Permission denied
+find: `/proc/52/task/52/fd': Permission denied
+find: `/proc/52/task/52/fdinfo': Permission denied
+find: `/proc/52/task/52/ns': Permission denied
+find: `/proc/52/fd': Permission denied
+find: `/proc/52/map_files': Permission denied
+find: `/proc/52/fdinfo': Permission denied
+find: `/proc/52/ns': Permission denied
+find: `/proc/53/task/53/fd': Permission denied
+find: `/proc/53/task/53/fdinfo': Permission denied
+find: `/proc/53/task/53/ns': Permission denied
+find: `/proc/53/fd': Permission denied
+find: `/proc/53/map_files': Permission denied
+find: `/proc/53/fdinfo': Permission denied
+find: `/proc/53/ns': Permission denied
+find: `/proc/54/task/54/fd': Permission denied
+find: `/proc/54/task/54/fdinfo': Permission denied
+find: `/proc/54/task/54/ns': Permission denied
+find: `/proc/54/fd': Permission denied
+find: `/proc/54/map_files': Permission denied
+find: `/proc/54/fdinfo': Permission denied
+find: `/proc/54/ns': Permission denied
+find: `/proc/55/task/55/fd': Permission denied
+find: `/proc/55/task/55/fdinfo': Permission denied
+find: `/proc/55/task/55/ns': Permission denied
+find: `/proc/55/fd': Permission denied
+find: `/proc/55/map_files': Permission denied
+find: `/proc/55/fdinfo': Permission denied
+find: `/proc/55/ns': Permission denied
+find: `/proc/56/task/56/fd': Permission denied
+find: `/proc/56/task/56/fdinfo': Permission denied
+find: `/proc/56/task/56/ns': Permission denied
+find: `/proc/56/fd': Permission denied
+find: `/proc/56/map_files': Permission denied
+find: `/proc/56/fdinfo': Permission denied
+find: `/proc/56/ns': Permission denied
+find: `/proc/57/task/57/fd': Permission denied
+find: `/proc/57/task/57/fdinfo': Permission denied
+find: `/proc/57/task/57/ns': Permission denied
+find: `/proc/57/fd': Permission denied
+find: `/proc/57/map_files': Permission denied
+find: `/proc/57/fdinfo': Permission denied
+find: `/proc/57/ns': Permission denied
+find: `/proc/58/task/58/fd': Permission denied
+find: `/proc/58/task/58/fdinfo': Permission denied
+find: `/proc/58/task/58/ns': Permission denied
+find: `/proc/58/fd': Permission denied
+find: `/proc/58/map_files': Permission denied
+find: `/proc/58/fdinfo': Permission denied
+find: `/proc/58/ns': Permission denied
+find: `/proc/59/task/59/fd': Permission denied
+find: `/proc/59/task/59/fdinfo': Permission denied
+find: `/proc/59/task/59/ns': Permission denied
+find: `/proc/59/fd': Permission denied
+find: `/proc/59/map_files': Permission denied
+find: `/proc/59/fdinfo': Permission denied
+find: `/proc/59/ns': Permission denied
+find: `/proc/60/task/60/fd': Permission denied
+find: `/proc/60/task/60/fdinfo': Permission denied
+find: `/proc/60/task/60/ns': Permission denied
+find: `/proc/60/fd': Permission denied
+find: `/proc/60/map_files': Permission denied
+find: `/proc/60/fdinfo': Permission denied
+find: `/proc/60/ns': Permission denied
+find: `/proc/61/task/61/fd': Permission denied
+find: `/proc/61/task/61/fdinfo': Permission denied
+find: `/proc/61/task/61/ns': Permission denied
+find: `/proc/61/fd': Permission denied
+find: `/proc/61/map_files': Permission denied
+find: `/proc/61/fdinfo': Permission denied
+find: `/proc/61/ns': Permission denied
+find: `/proc/62/task/62/fd': Permission denied
+find: `/proc/62/task/62/fdinfo': Permission denied
+find: `/proc/62/task/62/ns': Permission denied
+find: `/proc/62/fd': Permission denied
+find: `/proc/62/map_files': Permission denied
+find: `/proc/62/fdinfo': Permission denied
+find: `/proc/62/ns': Permission denied
+find: `/proc/63/task/63/fd': Permission denied
+find: `/proc/63/task/63/fdinfo': Permission denied
+find: `/proc/63/task/63/ns': Permission denied
+find: `/proc/63/fd': Permission denied
+find: `/proc/63/map_files': Permission denied
+find: `/proc/63/fdinfo': Permission denied
+find: `/proc/63/ns': Permission denied
+find: `/proc/64/task/64/fd': Permission denied
+find: `/proc/64/task/64/fdinfo': Permission denied
+find: `/proc/64/task/64/ns': Permission denied
+find: `/proc/64/fd': Permission denied
+find: `/proc/64/map_files': Permission denied
+find: `/proc/64/fdinfo': Permission denied
+find: `/proc/64/ns': Permission denied
+find: `/proc/65/task/65/fd': Permission denied
+find: `/proc/65/task/65/fdinfo': Permission denied
+find: `/proc/65/task/65/ns': Permission denied
+find: `/proc/65/fd': Permission denied
+find: `/proc/65/map_files': Permission denied
+find: `/proc/65/fdinfo': Permission denied
+find: `/proc/65/ns': Permission denied
+find: `/proc/66/task/66/fd': Permission denied
+find: `/proc/66/task/66/fdinfo': Permission denied
+find: `/proc/66/task/66/ns': Permission denied
+find: `/proc/66/fd': Permission denied
+find: `/proc/66/map_files': Permission denied
+find: `/proc/66/fdinfo': Permission denied
+find: `/proc/66/ns': Permission denied
+find: `/proc/67/task/67/fd': Permission denied
+find: `/proc/67/task/67/fdinfo': Permission denied
+find: `/proc/67/task/67/ns': Permission denied
+find: `/proc/67/fd': Permission denied
+find: `/proc/67/map_files': Permission denied
+find: `/proc/67/fdinfo': Permission denied
+find: `/proc/67/ns': Permission denied
+find: `/proc/68/task/68/fd': Permission denied
+find: `/proc/68/task/68/fdinfo': Permission denied
+find: `/proc/68/task/68/ns': Permission denied
+find: `/proc/68/fd': Permission denied
+find: `/proc/68/map_files': Permission denied
+find: `/proc/68/fdinfo': Permission denied
+find: `/proc/68/ns': Permission denied
+find: `/proc/69/task/69/fd': Permission denied
+find: `/proc/69/task/69/fdinfo': Permission denied
+find: `/proc/69/task/69/ns': Permission denied
+find: `/proc/69/fd': Permission denied
+find: `/proc/69/map_files': Permission denied
+find: `/proc/69/fdinfo': Permission denied
+find: `/proc/69/ns': Permission denied
+find: `/proc/70/task/70/fd': Permission denied
+find: `/proc/70/task/70/fdinfo': Permission denied
+find: `/proc/70/task/70/ns': Permission denied
+find: `/proc/70/fd': Permission denied
+find: `/proc/70/map_files': Permission denied
+find: `/proc/70/fdinfo': Permission denied
+find: `/proc/70/ns': Permission denied
+find: `/proc/71/task/71/fd': Permission denied
+find: `/proc/71/task/71/fdinfo': Permission denied
+find: `/proc/71/task/71/ns': Permission denied
+find: `/proc/71/fd': Permission denied
+find: `/proc/71/map_files': Permission denied
+find: `/proc/71/fdinfo': Permission denied
+find: `/proc/71/ns': Permission denied
+find: `/proc/72/task/72/fd': Permission denied
+find: `/proc/72/task/72/fdinfo': Permission denied
+find: `/proc/72/task/72/ns': Permission denied
+find: `/proc/72/fd': Permission denied
+find: `/proc/72/map_files': Permission denied
+find: `/proc/72/fdinfo': Permission denied
+find: `/proc/72/ns': Permission denied
+find: `/proc/73/task/73/fd': Permission denied
+find: `/proc/73/task/73/fdinfo': Permission denied
+find: `/proc/73/task/73/ns': Permission denied
+find: `/proc/73/fd': Permission denied
+find: `/proc/73/map_files': Permission denied
+find: `/proc/73/fdinfo': Permission denied
+find: `/proc/73/ns': Permission denied
+find: `/proc/74/task/74/fd': Permission denied
+find: `/proc/74/task/74/fdinfo': Permission denied
+find: `/proc/74/task/74/ns': Permission denied
+find: `/proc/74/fd': Permission denied
+find: `/proc/74/map_files': Permission denied
+find: `/proc/74/fdinfo': Permission denied
+find: `/proc/74/ns': Permission denied
+find: `/proc/75/task/75/fd': Permission denied
+find: `/proc/75/task/75/fdinfo': Permission denied
+find: `/proc/75/task/75/ns': Permission denied
+find: `/proc/75/fd': Permission denied
+find: `/proc/75/map_files': Permission denied
+find: `/proc/75/fdinfo': Permission denied
+find: `/proc/75/ns': Permission denied
+find: `/proc/76/task/76/fd': Permission denied
+find: `/proc/76/task/76/fdinfo': Permission denied
+find: `/proc/76/task/76/ns': Permission denied
+find: `/proc/76/fd': Permission denied
+find: `/proc/76/map_files': Permission denied
+find: `/proc/76/fdinfo': Permission denied
+find: `/proc/76/ns': Permission denied
+find: `/proc/78/task/78/fd': Permission denied
+find: `/proc/78/task/78/fdinfo': Permission denied
+find: `/proc/78/task/78/ns': Permission denied
+find: `/proc/78/fd': Permission denied
+find: `/proc/78/map_files': Permission denied
+find: `/proc/78/fdinfo': Permission denied
+find: `/proc/78/ns': Permission denied
+find: `/proc/79/task/79/fd': Permission denied
+find: `/proc/79/task/79/fdinfo': Permission denied
+find: `/proc/79/task/79/ns': Permission denied
+find: `/proc/79/fd': Permission denied
+find: `/proc/79/map_files': Permission denied
+find: `/proc/79/fdinfo': Permission denied
+find: `/proc/79/ns': Permission denied
+find: `/proc/80/task/80/fd': Permission denied
+find: `/proc/80/task/80/fdinfo': Permission denied
+find: `/proc/80/task/80/ns': Permission denied
+find: `/proc/80/fd': Permission denied
+find: `/proc/80/map_files': Permission denied
+find: `/proc/80/fdinfo': Permission denied
+find: `/proc/80/ns': Permission denied
+find: `/proc/82/task/82/fd': Permission denied
+find: `/proc/82/task/82/fdinfo': Permission denied
+find: `/proc/82/task/82/ns': Permission denied
+find: `/proc/82/fd': Permission denied
+find: `/proc/82/map_files': Permission denied
+find: `/proc/82/fdinfo': Permission denied
+find: `/proc/82/ns': Permission denied
+find: `/proc/83/task/83/fd': Permission denied
+find: `/proc/83/task/83/fdinfo': Permission denied
+find: `/proc/83/task/83/ns': Permission denied
+find: `/proc/83/fd': Permission denied
+find: `/proc/83/map_files': Permission denied
+find: `/proc/83/fdinfo': Permission denied
+find: `/proc/83/ns': Permission denied
+find: `/proc/85/task/85/fd': Permission denied
+find: `/proc/85/task/85/fdinfo': Permission denied
+find: `/proc/85/task/85/ns': Permission denied
+find: `/proc/85/fd': Permission denied
+find: `/proc/85/map_files': Permission denied
+find: `/proc/85/fdinfo': Permission denied
+find: `/proc/85/ns': Permission denied
+find: `/proc/86/task/86/fd': Permission denied
+find: `/proc/86/task/86/fdinfo': Permission denied
+find: `/proc/86/task/86/ns': Permission denied
+find: `/proc/86/fd': Permission denied
+find: `/proc/86/map_files': Permission denied
+find: `/proc/86/fdinfo': Permission denied
+find: `/proc/86/ns': Permission denied
+find: `/proc/87/task/87/fd': Permission denied
+find: `/proc/87/task/87/fdinfo': Permission denied
+find: `/proc/87/task/87/ns': Permission denied
+find: `/proc/87/fd': Permission denied
+find: `/proc/87/map_files': Permission denied
+find: `/proc/87/fdinfo': Permission denied
+find: `/proc/87/ns': Permission denied
+find: `/proc/88/task/88/fd': Permission denied
+find: `/proc/88/task/88/fdinfo': Permission denied
+find: `/proc/88/task/88/ns': Permission denied
+find: `/proc/88/fd': Permission denied
+find: `/proc/88/map_files': Permission denied
+find: `/proc/88/fdinfo': Permission denied
+find: `/proc/88/ns': Permission denied
+find: `/proc/104/task/104/fd': Permission denied
+find: `/proc/104/task/104/fdinfo': Permission denied
+find: `/proc/104/task/104/ns': Permission denied
+find: `/proc/104/fd': Permission denied
+find: `/proc/104/map_files': Permission denied
+find: `/proc/104/fdinfo': Permission denied
+find: `/proc/104/ns': Permission denied
+find: `/proc/117/task/117/fd': Permission denied
+find: `/proc/117/task/117/fdinfo': Permission denied
+find: `/proc/117/task/117/ns': Permission denied
+find: `/proc/117/fd': Permission denied
+find: `/proc/117/map_files': Permission denied
+find: `/proc/117/fdinfo': Permission denied
+find: `/proc/117/ns': Permission denied
+find: `/proc/128/task/128/fd': Permission denied
+find: `/proc/128/task/128/fdinfo': Permission denied
+find: `/proc/128/task/128/ns': Permission denied
+find: `/proc/128/fd': Permission denied
+find: `/proc/128/map_files': Permission denied
+find: `/proc/128/fdinfo': Permission denied
+find: `/proc/128/ns': Permission denied
+find: `/proc/137/task/137/fd': Permission denied
+find: `/proc/137/task/137/fdinfo': Permission denied
+find: `/proc/137/task/137/ns': Permission denied
+find: `/proc/137/fd': Permission denied
+find: `/proc/137/map_files': Permission denied
+find: `/proc/137/fdinfo': Permission denied
+find: `/proc/137/ns': Permission denied
+find: `/proc/139/task/139/fd': Permission denied
+find: `/proc/139/task/139/fdinfo': Permission denied
+find: `/proc/139/task/139/ns': Permission denied
+find: `/proc/139/fd': Permission denied
+find: `/proc/139/map_files': Permission denied
+find: `/proc/139/fdinfo': Permission denied
+find: `/proc/139/ns': Permission denied
+find: `/proc/185/task/185/fd': Permission denied
+find: `/proc/185/task/185/fdinfo': Permission denied
+find: `/proc/185/task/185/ns': Permission denied
+find: `/proc/185/fd': Permission denied
+find: `/proc/185/map_files': Permission denied
+find: `/proc/185/fdinfo': Permission denied
+find: `/proc/185/ns': Permission denied
+find: `/proc/209/task/209/fd': Permission denied
+find: `/proc/209/task/209/fdinfo': Permission denied
+find: `/proc/209/task/209/ns': Permission denied
+find: `/proc/209/fd': Permission denied
+find: `/proc/209/map_files': Permission denied
+find: `/proc/209/fdinfo': Permission denied
+find: `/proc/209/ns': Permission denied
+find: `/proc/215/task/215/fd': Permission denied
+find: `/proc/215/task/215/fdinfo': Permission denied
+find: `/proc/215/task/215/ns': Permission denied
+find: `/proc/215/fd': Permission denied
+find: `/proc/215/map_files': Permission denied
+find: `/proc/215/fdinfo': Permission denied
+find: `/proc/215/ns': Permission denied
+find: `/proc/222/task/222/fd': Permission denied
+find: `/proc/222/task/222/fdinfo': Permission denied
+find: `/proc/222/task/222/ns': Permission denied
+find: `/proc/222/fd': Permission denied
+find: `/proc/222/map_files': Permission denied
+find: `/proc/222/fdinfo': Permission denied
+find: `/proc/222/ns': Permission denied
+find: `/proc/226/task/226/fd': Permission denied
+find: `/proc/226/task/226/fdinfo': Permission denied
+find: `/proc/226/task/226/ns': Permission denied
+find: `/proc/226/fd': Permission denied
+find: `/proc/226/map_files': Permission denied
+find: `/proc/226/fdinfo': Permission denied
+find: `/proc/226/ns': Permission denied
+find: `/proc/234/task/234/fd': Permission denied
+find: `/proc/234/task/234/fdinfo': Permission denied
+find: `/proc/234/task/234/ns': Permission denied
+find: `/proc/234/fd': Permission denied
+find: `/proc/234/map_files': Permission denied
+find: `/proc/234/fdinfo': Permission denied
+find: `/proc/234/ns': Permission denied
+find: `/proc/404/task/404/fd': Permission denied
+find: `/proc/404/task/404/fdinfo': Permission denied
+find: `/proc/404/task/404/ns': Permission denied
+find: `/proc/404/task/445/fd': Permission denied
+find: `/proc/404/task/445/fdinfo': Permission denied
+find: `/proc/404/task/445/ns': Permission denied
+find: `/proc/404/task/446/fd': Permission denied
+find: `/proc/404/task/446/fdinfo': Permission denied
+find: `/proc/404/task/446/ns': Permission denied
+find: `/proc/404/task/447/fd': Permission denied
+find: `/proc/404/task/447/fdinfo': Permission denied
+find: `/proc/404/task/447/ns': Permission denied
+find: `/proc/404/fd': Permission denied
+find: `/proc/404/map_files': Permission denied
+find: `/proc/404/fdinfo': Permission denied
+find: `/proc/404/ns': Permission denied
+find: `/proc/405/task/405/fd': Permission denied
+find: `/proc/405/task/405/fdinfo': Permission denied
+find: `/proc/405/task/405/ns': Permission denied
+find: `/proc/405/fd': Permission denied
+find: `/proc/405/map_files': Permission denied
+find: `/proc/405/fdinfo': Permission denied
+find: `/proc/405/ns': Permission denied
+find: `/proc/409/task/409/fd': Permission denied
+find: `/proc/409/task/409/fdinfo': Permission denied
+find: `/proc/409/task/409/ns': Permission denied
+find: `/proc/409/fd': Permission denied
+find: `/proc/409/map_files': Permission denied
+find: `/proc/409/fdinfo': Permission denied
+find: `/proc/409/ns': Permission denied
+find: `/proc/416/task/416/fd': Permission denied
+find: `/proc/416/task/416/fdinfo': Permission denied
+find: `/proc/416/task/416/ns': Permission denied
+find: `/proc/416/fd': Permission denied
+find: `/proc/416/map_files': Permission denied
+find: `/proc/416/fdinfo': Permission denied
+find: `/proc/416/ns': Permission denied
+find: `/proc/429/task/429/fd': Permission denied
+find: `/proc/429/task/429/fdinfo': Permission denied
+find: `/proc/429/task/429/ns': Permission denied
+find: `/proc/429/fd': Permission denied
+find: `/proc/429/map_files': Permission denied
+find: `/proc/429/fdinfo': Permission denied
+find: `/proc/429/ns': Permission denied
+find: `/proc/434/task/434/fd': Permission denied
+find: `/proc/434/task/434/fdinfo': Permission denied
+find: `/proc/434/task/434/ns': Permission denied
+find: `/proc/434/fd': Permission denied
+find: `/proc/434/map_files': Permission denied
+find: `/proc/434/fdinfo': Permission denied
+find: `/proc/434/ns': Permission denied
+find: `/proc/440/task/440/fd': Permission denied
+find: `/proc/440/task/440/fdinfo': Permission denied
+find: `/proc/440/task/440/ns': Permission denied
+find: `/proc/440/fd': Permission denied
+find: `/proc/440/map_files': Permission denied
+find: `/proc/440/fdinfo': Permission denied
+find: `/proc/440/ns': Permission denied
+find: `/proc/484/task/484/fd': Permission denied
+find: `/proc/484/task/484/fdinfo': Permission denied
+find: `/proc/484/task/484/ns': Permission denied
+find: `/proc/484/fd': Permission denied
+find: `/proc/484/map_files': Permission denied
+find: `/proc/484/fdinfo': Permission denied
+find: `/proc/484/ns': Permission denied
+find: `/proc/506/task/506/fd': Permission denied
+find: `/proc/506/task/506/fdinfo': Permission denied
+find: `/proc/506/task/506/ns': Permission denied
+find: `/proc/506/fd': Permission denied
+find: `/proc/506/map_files': Permission denied
+find: `/proc/506/fdinfo': Permission denied
+find: `/proc/506/ns': Permission denied
+find: `/proc/537/task/537/fd': Permission denied
+find: `/proc/537/task/537/fdinfo': Permission denied
+find: `/proc/537/task/537/ns': Permission denied
+find: `/proc/537/fd': Permission denied
+find: `/proc/537/map_files': Permission denied
+find: `/proc/537/fdinfo': Permission denied
+find: `/proc/537/ns': Permission denied
+find: `/proc/550/task/550/fd': Permission denied
+find: `/proc/550/task/550/fdinfo': Permission denied
+find: `/proc/550/task/550/ns': Permission denied
+find: `/proc/550/fd': Permission denied
+find: `/proc/550/map_files': Permission denied
+find: `/proc/550/fdinfo': Permission denied
+find: `/proc/550/ns': Permission denied
+find: `/proc/575/task/575/fd': Permission denied
+find: `/proc/575/task/575/fdinfo': Permission denied
+find: `/proc/575/task/575/ns': Permission denied
+find: `/proc/575/fd': Permission denied
+find: `/proc/575/map_files': Permission denied
+find: `/proc/575/fdinfo': Permission denied
+find: `/proc/575/ns': Permission denied
+find: `/proc/616/task/616/fd': Permission denied
+find: `/proc/616/task/616/fdinfo': Permission denied
+find: `/proc/616/task/616/ns': Permission denied
+find: `/proc/616/fd': Permission denied
+find: `/proc/616/map_files': Permission denied
+find: `/proc/616/fdinfo': Permission denied
+find: `/proc/616/ns': Permission denied
+find: `/proc/617/task/617/fd': Permission denied
+find: `/proc/617/task/617/fdinfo': Permission denied
+find: `/proc/617/task/617/ns': Permission denied
+find: `/proc/617/fd': Permission denied
+find: `/proc/617/map_files': Permission denied
+find: `/proc/617/fdinfo': Permission denied
+find: `/proc/617/ns': Permission denied
+find: `/proc/618/task/618/fd': Permission denied
+find: `/proc/618/task/618/fdinfo': Permission denied
+find: `/proc/618/task/618/ns': Permission denied
+find: `/proc/618/fd': Permission denied
+find: `/proc/618/map_files': Permission denied
+find: `/proc/618/fdinfo': Permission denied
+find: `/proc/618/ns': Permission denied
+find: `/proc/712/task/712/fd': Permission denied
+find: `/proc/712/task/712/fdinfo': Permission denied
+find: `/proc/712/task/712/ns': Permission denied
+find: `/proc/712/fd': Permission denied
+find: `/proc/712/map_files': Permission denied
+find: `/proc/712/fdinfo': Permission denied
+find: `/proc/712/ns': Permission denied
+find: `/proc/745/task/745/fd': Permission denied
+find: `/proc/745/task/745/fdinfo': Permission denied
+find: `/proc/745/task/745/ns': Permission denied
+find: `/proc/745/fd': Permission denied
+find: `/proc/745/map_files': Permission denied
+find: `/proc/745/fdinfo': Permission denied
+find: `/proc/745/ns': Permission denied
+find: `/proc/894/task/894/fd': Permission denied
+find: `/proc/894/task/894/fdinfo': Permission denied
+find: `/proc/894/task/894/ns': Permission denied
+find: `/proc/894/fd': Permission denied
+find: `/proc/894/map_files': Permission denied
+find: `/proc/894/fdinfo': Permission denied
+find: `/proc/894/ns': Permission denied
+find: `/proc/895/task/895/fd': Permission denied
+find: `/proc/895/task/895/fdinfo': Permission denied
+find: `/proc/895/task/895/ns': Permission denied
+find: `/proc/895/fd': Permission denied
+find: `/proc/895/map_files': Permission denied
+find: `/proc/895/fdinfo': Permission denied
+find: `/proc/895/ns': Permission denied
+find: `/proc/896/task/896/fd': Permission denied
+find: `/proc/896/task/896/fdinfo': Permission denied
+find: `/proc/896/task/896/ns': Permission denied
+find: `/proc/896/fd': Permission denied
+find: `/proc/896/map_files': Permission denied
+find: `/proc/896/fdinfo': Permission denied
+find: `/proc/896/ns': Permission denied
+find: `/proc/897/task/897/fd': Permission denied
+find: `/proc/897/task/897/fdinfo': Permission denied
+find: `/proc/897/task/897/ns': Permission denied
+find: `/proc/897/fd': Permission denied
+find: `/proc/897/map_files': Permission denied
+find: `/proc/897/fdinfo': Permission denied
+find: `/proc/897/ns': Permission denied
+find: `/proc/898/task/898/fd': Permission denied
+find: `/proc/898/task/898/fdinfo': Permission denied
+find: `/proc/898/task/898/ns': Permission denied
+find: `/proc/898/fd': Permission denied
+find: `/proc/898/map_files': Permission denied
+find: `/proc/898/fdinfo': Permission denied
+find: `/proc/898/ns': Permission denied
+find: `/proc/904/task/904/fd': Permission denied
+find: `/proc/904/task/904/fdinfo': Permission denied
+find: `/proc/904/task/904/ns': Permission denied
+find: `/proc/904/fd': Permission denied
+find: `/proc/904/map_files': Permission denied
+find: `/proc/904/fdinfo': Permission denied
+find: `/proc/904/ns': Permission denied
+find: `/proc/930/task/930/fd': Permission denied
+find: `/proc/930/task/930/fdinfo': Permission denied
+find: `/proc/930/task/930/ns': Permission denied
+find: `/proc/930/fd': Permission denied
+find: `/proc/930/map_files': Permission denied
+find: `/proc/930/fdinfo': Permission denied
+find: `/proc/930/ns': Permission denied
+find: `/proc/1266/task/1266/fd': Permission denied
+find: `/proc/1266/task/1266/fdinfo': Permission denied
+find: `/proc/1266/task/1266/ns': Permission denied
+find: `/proc/1266/fd': Permission denied
+find: `/proc/1266/map_files': Permission denied
+find: `/proc/1266/fdinfo': Permission denied
+find: `/proc/1266/ns': Permission denied
+find: `/proc/1270/task/1270/fd': Permission denied
+find: `/proc/1270/task/1270/fdinfo': Permission denied
+find: `/proc/1270/task/1270/ns': Permission denied
+find: `/proc/1270/fd': Permission denied
+find: `/proc/1270/map_files': Permission denied
+find: `/proc/1270/fdinfo': Permission denied
+find: `/proc/1270/ns': Permission denied
+find: `/proc/1271/task/1271/fd': Permission denied
+find: `/proc/1271/task/1271/fdinfo': Permission denied
+find: `/proc/1271/task/1271/ns': Permission denied
+find: `/proc/1271/fd': Permission denied
+find: `/proc/1271/map_files': Permission denied
+find: `/proc/1271/fdinfo': Permission denied
+find: `/proc/1271/ns': Permission denied
+find: `/proc/1297/task/1297/fd': Permission denied
+find: `/proc/1297/task/1297/fdinfo': Permission denied
+find: `/proc/1297/task/1297/ns': Permission denied
+find: `/proc/1297/fd': Permission denied
+find: `/proc/1297/map_files': Permission denied
+find: `/proc/1297/fdinfo': Permission denied
+find: `/proc/1297/ns': Permission denied
+find: `/proc/1309/task/1309/fd': Permission denied
+find: `/proc/1309/task/1309/fdinfo': Permission denied
+find: `/proc/1309/task/1309/ns': Permission denied
+find: `/proc/1309/fd': Permission denied
+find: `/proc/1309/map_files': Permission denied
+find: `/proc/1309/fdinfo': Permission denied
+find: `/proc/1309/ns': Permission denied
+find: `/proc/1314/task/1314/fd': Permission denied
+find: `/proc/1314/task/1314/fdinfo': Permission denied
+find: `/proc/1314/task/1314/ns': Permission denied
+find: `/proc/1314/fd': Permission denied
+find: `/proc/1314/map_files': Permission denied
+find: `/proc/1314/fdinfo': Permission denied
+find: `/proc/1314/ns': Permission denied
+find: `/proc/1316/task/1316/fd': Permission denied
+find: `/proc/1316/task/1316/fdinfo': Permission denied
+find: `/proc/1316/task/1316/ns': Permission denied
+find: `/proc/1316/fd': Permission denied
+find: `/proc/1316/map_files': Permission denied
+find: `/proc/1316/fdinfo': Permission denied
+find: `/proc/1316/ns': Permission denied
+find: `/proc/1340/task/1340/fd': Permission denied
+find: `/proc/1340/task/1340/fdinfo': Permission denied
+find: `/proc/1340/task/1340/ns': Permission denied
+find: `/proc/1340/fd': Permission denied
+find: `/proc/1340/map_files': Permission denied
+find: `/proc/1340/fdinfo': Permission denied
+find: `/proc/1340/ns': Permission denied
+find: `/sys/kernel/debug': Permission denied
+/lib/systemd/system/syslog.socket
+find: `/var/log/lightdm': Permission denied
+/var/log/syslog
+find: `/var/spool/rsyslog': Permission denied
+find: `/var/spool/cron/crontabs': Permission denied
+find: `/var/lib/polkit-1': Permission denied
+find: `/var/lib/container': Permission denied
+/var/lib/systemd/deb-systemd-helper-enabled/syslog.service
+find: `/var/lib/udisks2': Permission denied
+find: `/var/lib/lightdm': Permission denied
+find: `/var/lib/bluetooth': Permission denied
+find: `/var/cache/ldconfig': Permission denied
+find: `/var/cache/lightdm': Permission denied
+find: `/var/tmp/systemd-private-29f636e59cea4028ad1a2b724a2550d5-rtkit-daemon.service-GpGBgQ': Permission denied
+find: `/var/tmp/systemd-private-8fcfc242d2aa45acbbe236c5bab5772b-rtkit-daemon.service-arfPY6': Permission denied
+find: `/var/tmp/systemd-private-54291e3c24ff41e79ee7fd07ad2004b7-rtkit-daemon.service-W7Wvr3': Permission denied
+find: `/var/tmp/systemd-private-80237a8e7e3a448aaeeab23e1b13c543-rtkit-daemon.service-s2DuRR': Permission denied
+find: `/var/tmp/systemd-private-8ccefb8706be4690bbc3fd8a97b25126-rtkit-daemon.service-aAf1kT': Permission denied
+find: `/var/tmp/systemd-private-643d3e1c3f4543b392b1808c7601ba14-rtkit-daemon.service-y2bU9C': Permission denied
+find: `/var/tmp/systemd-private-24149388a3874aa5a0ce7fa1ec20c672-systemd-hostnamed.service-oSmua3': Permission denied
+find: `/var/tmp/systemd-private-5b132b058cc8499fb5fadd84212e8473-rtkit-daemon.service-uDuon8': Permission denied
+find: `/var/tmp/systemd-private-5a16deb2d947448298be24577125ae84-rtkit-daemon.service-WMfoNw': Permission denied
+find: `/var/tmp/systemd-private-ff0a1e34277942748bcd5f3c68e9d0b7-rtkit-daemon.service-wgcnqR': Permission denied
+find: `/var/tmp/systemd-private-06bfd9aa43554915a160004ec1fb7a59-rtkit-daemon.service-cVFWTv': Permission denied
+find: `/var/tmp/systemd-private-416f157ab11f4199add6150f7b0c40b9-rtkit-daemon.service-aajFdr': Permission denied
+find: `/var/tmp/systemd-private-24149388a3874aa5a0ce7fa1ec20c672-rtkit-daemon.service-q4cFsw': Permission denied
+find: `/var/tmp/systemd-private-e36de12f780443b5ae31484acd4cb398-systemd-hostnamed.service-4YwQX4': Permission denied
+find: `/var/tmp/systemd-private-f7211d92d367417abc32c45b2d97a306-rtkit-daemon.service-W6XuLl': Permission denied
+find: `/var/tmp/systemd-private-14769e2692fd4724ba503b3c6a439ce5-rtkit-daemon.service-OhgBlS': Permission denied
+find: `/var/tmp/systemd-private-ce28191c58864ec1aee19ab15d618e87-rtkit-daemon.service-GXjk0S': Permission denied
+find: `/var/tmp/systemd-private-f117717f4eb54fefa1840f7388c5d512-systemd-hostnamed.service-2appRl': Permission denied
+find: `/var/tmp/systemd-private-88d0a0c02e2944b193fd25f60a2bb7e1-rtkit-daemon.service-iwLCOw': Permission denied
+find: `/var/tmp/systemd-private-863efceb01904c30970221d7fac44b76-rtkit-daemon.service-0T4CPd': Permission denied
+find: `/var/tmp/systemd-private-078be800d3b54659b4105758b56b3914-rtkit-daemon.service-aAJXG6': Permission denied
+find: `/var/tmp/systemd-private-732aa15e7f804f3ab8a7b030bb6068ac-rtkit-daemon.service-AL8ISF': Permission denied
+find: `/var/tmp/systemd-private-29690f273a7845b0a81dde45cafdf89e-rtkit-daemon.service-Ea1dJy': Permission denied
+find: `/var/tmp/systemd-private-7a7d11a4fdc740c4af7981659cea9886-rtkit-daemon.service-4yZDtB': Permission denied
+find: `/var/tmp/systemd-private-ff0a1e34277942748bcd5f3c68e9d0b7-systemd-hostnamed.service-U61Fva': Permission denied
+find: `/var/tmp/systemd-private-9a73a35b70644e589ef1eb1fecc05fec-rtkit-daemon.service-ijpLsh': Permission denied
+find: `/var/tmp/systemd-private-41bc9d70d8d544ffae83cf883e22779a-systemd-hostnamed.service-I6UNwu': Permission denied
+find: `/var/tmp/systemd-private-48e77a423c7d4afaa10e1ed87b11ca2e-rtkit-daemon.service-cKsofi': Permission denied
+find: `/var/tmp/systemd-private-f3c2a738c1af40f2a1e20f1e2628a074-systemd-hostnamed.service-uRLV1V': Permission denied
+find: `/var/tmp/systemd-private-ca0b7d801e5944bda67ad737541b7ac2-rtkit-daemon.service-eHuBva': Permission denied
+find: `/lost+found': Permission denied
+/usr/include/arm-linux-gnueabihf/bits/syslog-ldbl.h
+/usr/include/arm-linux-gnueabihf/bits/syslog-path.h
+/usr/include/arm-linux-gnueabihf/bits/syslog.h
+/usr/include/arm-linux-gnueabihf/sys/syslog.h
+/usr/include/syslog.h
+/usr/share/man/man3/syslog.3.gz
+/usr/share/man/man2/syslog.2.gz
+/usr/share/doc/libruby1.9.1/syslog
+/usr/share/doc/libruby1.9.1/syslog/syslog.txt
+/usr/share/ri/1.9.1/system/Syslog
+/usr/lib/pypy/lib_pypy/syslog.py
+/usr/lib/pypy/lib_pypy/__pycache__/syslog.pypy-26.pyc
+/usr/lib/arm-linux-gnueabihf/ruby/2.1.0/syslog.so
+/usr/lib/arm-linux-gnueabihf/perl/5.20.2/Sys/Syslog.pm
+/usr/lib/arm-linux-gnueabihf/perl/5.20.2/bits/syslog-ldbl.ph
+/usr/lib/arm-linux-gnueabihf/perl/5.20.2/bits/syslog.ph
+/usr/lib/arm-linux-gnueabihf/perl/5.20.2/bits/syslog-path.ph
+/usr/lib/arm-linux-gnueabihf/perl/5.20.2/syslog.ph
+/usr/lib/arm-linux-gnueabihf/perl/5.20.2/auto/Sys/Syslog
+/usr/lib/arm-linux-gnueabihf/perl/5.20.2/auto/Sys/Syslog/Syslog.so
+/usr/lib/arm-linux-gnueabihf/perl/5.20.2/sys/syslog.ph
+/usr/lib/ruby/1.9.1/arm-linux-eabihf/syslog.so
+/usr/lib/ruby/2.1.0/syslog
+find: `/run/alsa': Permission denied
+find: `/run/log/journal/2e7311d7868244978f314762db251c8e': Permission denied
+/run/systemd/journal/syslog
+find: `/run/systemd/inaccessible': Permission denied
+find: `/tmp/pulse-PKdhtXMmr18n': Permission denied
+find: `/root': Permission denied
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ find / -iname 'syslog*' 2>/dev /null
+/etc/systemd/system/syslog.service
+/lib/systemd/system/syslog.socket
+/var/log/syslog
+/var/lib/systemd/deb-systemd-helper-enabled/syslog.service
+/usr/include/arm-linux-gnueabihf/bits/syslog-ldbl.h
+/usr/include/arm-linux-gnueabihf/bits/syslog-path.h
+/usr/include/arm-linux-gnueabihf/bits/syslog.h
+/usr/include/arm-linux-gnueabihf/sys/syslog.h
+/usr/include/syslog.h
+/usr/share/man/man3/syslog.3.gz
+/usr/share/man/man2/syslog.2.gz
+/usr/share/doc/libruby1.9.1/syslog
+/usr/share/doc/libruby1.9.1/syslog/syslog.txt
+/usr/share/ri/1.9.1/system/Syslog
+/usr/lib/pypy/lib_pypy/syslog.py
+/usr/lib/pypy/lib_pypy/__pycache__/syslog.pypy-26.pyc
+/usr/lib/arm-linux-gnueabihf/ruby/2.1.0/syslog.so
+/usr/lib/arm-linux-gnueabihf/perl/5.20.2/Sys/Syslog.pm
+/usr/lib/arm-linux-gnueabihf/perl/5.20.2/bits/syslog-ldbl.ph
+/usr/lib/arm-linux-gnueabihf/perl/5.20.2/bits/syslog.ph
+/usr/lib/arm-linux-gnueabihf/perl/5.20.2/bits/syslog-path.ph
+/usr/lib/arm-linux-gnueabihf/perl/5.20.2/syslog.ph
+/usr/lib/arm-linux-gnueabihf/perl/5.20.2/auto/Sys/Syslog
+/usr/lib/arm-linux-gnueabihf/perl/5.20.2/auto/Sys/Syslog/Syslog.so
+/usr/lib/arm-linux-gnueabihf/perl/5.20.2/sys/syslog.ph
+/usr/lib/ruby/1.9.1/arm-linux-eabihf/syslog.so
+/usr/lib/ruby/2.1.0/syslog
+/run/systemd/journal/syslog
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git
