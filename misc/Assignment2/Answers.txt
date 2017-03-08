@@ -1914,4 +1914,63 @@ pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ git status
 On branch master
 Your branch is up-to-date with 'origin/master'.
 Untracked files:
-  (use "git
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m./[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ git add .
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ gitv[K status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   Answers.txt[m
+	[32mnew file:   installed_packages.txt[m
+
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ comm[K[K[K[Kgit cm[Kommit
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <pi@raspberrypi.(none)>) not allowed
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ git config --global user.email  dhanvinded[Kr758i[K@gmail.com
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ git config --global use.r[K[Kr.name  Dhanvinder Singh
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ git commit
+(B)0[1;24r[m[4l[?7h[?1h=[?1h=[?1h=[H[J[0;7m  GNU nano 2.2.6   File: /home/pi/ELSpring2017-1/.git/COMMIT_EDITMSG            [4;1H[m# Please enter the commit message for your changes. Lines starting[1B# with '#' will be ignored, and an empty message aborts the commit.[1B# On branch master[1B# Your branch is up-to-date with 'origin/master'.[1B#[1B# Changes to be committed:[1B#[7Cnew file:   Answers.txt[1B#[7Cnew file:   installed_packages.txt[1B#[22;32H[0;7m[ Read 10 lines ][1B^G[m Get Help  [0;7m^O[m WriteOut  [0;7m^R[m Read File [0;7m^Y[m Prev Page [0;7m^K[m Cut Text  [0;7m^C[m Cur Pos[1B[0;7m^X[m Exit[6C[0;7m^J[m Justify   [0;7m^W[m Where Is  [0;7m^V[m Next Page [0;7m^U[m UnCut Text[0;7m^T[m To Spell[21A[1B[1B[1B[1B[1B[1B[1B[1B[1B[1B[1;71H[0;7mModified[12B[mfind / -iname 'syslog*' 2>/dev/null[9B[K[13;36H                              [KCommiting Assignment 2 to github[9B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [23;1H Y[m Yes[K[1B[0;7m N[m No  [6C   [0;7m^C[m Cancel[K[22;62H[0;7mFile Name to Write: /home/pi/ELSpring2017-1/.git/COMMIT_EDITMSG[1B^G[m Get Help[23;21H[0;7mM-D[m DOS Format[6C[0;7mM-A[m Append[23;61H[0;7mM-B[m Backup File[1B[0;7m^C[m Cancel[7C    [0;7mM-M[m Mac Format[6C[0;7mM-P[m Prepend[22;64H[1B[J[1;71H[0;7m        [21B[m                               [0;7m[ Wrote 11 lines ][m                               [24;80H[24;1H[?1l>[master 3cd3611] Commiting Assignment 2 to github
+ 2 files changed, 1917 insertions(+)
+ create mode 100644 misc/Assignment2/Answers.txt
+ create mode 100644 misc/Assignment2/installed_packages.txt
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+pi@raspberrypi:~/ELSpring2017-1/misc/Assignment2$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'g
