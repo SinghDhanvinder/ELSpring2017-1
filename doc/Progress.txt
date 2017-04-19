@@ -1,0 +1,33 @@
+Interim report due - 4/19/2017
+Otto Vogrincic 
+Mario Mena
+Dhanvinder Singh
+
+Your project – brief description
+
+Self-watering plant system. For this project we use a moisture sensor, a water pump, and a temperature/humidity sensor. We activate the mechanism once the moisture sensor shows that the moisture in the soil is low. This causes the pump to activate and water starts flowing to the plant. The temperature and humidity sensors are used to keep track of the temperature and humidity around the plant. All of these are monitored from a web application that shows the current moisture level and both the temperature and humidity.
+
+Work done so far – list
+
+-Temp/humidity sensor code up and working, storing data in database.
+-Moisture sensor code ready.
+-Pump code ready.
+-Combined pump and moisture sensor code ready and working.
+
+ Work that needs to be done in the next 3 weeks.
+
+-Website
+-Box for the pi and sensors
+
+What each person did:
+Dhanvinder- Moisture sensor code, helped with the integration of the pump code into the moisture sensor code.
+Otto- Water pump code, helped with the integration of the pump code into the moisture sensor code.
+Mario- Temp/hum code, created a database to store the readings of the sensor, helped with the integration of the pump code into the moisture sensor code.
+All together- Combined pump and moisture sensor code.
+
+Future roles:
+Dhanvinder- Building the storage box for the Pi and the temperature sensors. 
+Otto- Setting up server.
+Mario- Adding graph for temp/hum to web app.
+All together- Work on web app.
+Additional features to be added depending on completion time.
