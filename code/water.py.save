@@ -1,0 +1,12 @@
+import flask, flask.views
+import os
+import utils
+
+class Remote(flask.views.MethodView):
+	@utils.login_required
+	def get(self):
+		return flask.render_template('water.html')
+
+	@utils.login_required
+	def post(self):
+		result = eval(flask.request.form[
