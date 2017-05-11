@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block body %}
+	<h1>Contact</h1>
+	<p>Please fill the form below with your inquiry.</p>
+	<form action="{{url_for('contact')}}" method="post">
+<!--		<input type="text" name="expressions" /> 
+-->		<input type="text" placeholder="Your Name" class="form-control" name="name"/>
+		<input type="text" placeholder="Your Email" class="form-control" name="email"/>
+		<textarea placeholder="Your Message" class="form-control" rows="5" id="comment" name="expression"></textarea>
+		<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+	</form>
+
+
+<!--
+<div class="container">
+	<div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="well well-sm">
+          <form class="form-horizontal" action="{{url_for('contact')}}" method="post">
+          <fieldset>
+            <legend class="text-center">Contact us</legend>
+-->    
+            <!-- Name input-->
+<!--            <div class="form-group">
+              <label class="col-md-3 control-label" for="name">Name</label>
+              <div class="col-md-9">
+                <input id="name" name="name" type="text" placeholder="Your name" 
+class="form-control">
+              </div>
+            </div>
+    
+-->            <!-- Email input-->
+<!--            <div class="form-group">
+              <label class="col-md-3 control-label" for="email">Your E-mail</label>
+              <div class="col-md-9">
+                <input id="email" name="email" type="text" placeholder="Your email" 
+class="form-control">
+              </div>
+            </div>
+    
+-->            <!-- Message body -->
+<!--            <div class="form-group">
+              <label class="col-md-3 control-label" for="message">Your message</label>
+              <div class="col-md-9">
+                <textarea class="form-control" id="message" name="message" 
+placeholder="Please enter your message here..." rows="5"></textarea>
+              </div>
+            </div>
+    
+-->            <!-- Form actions -->
+<!--            <div class="form-group">
+              <div class="col-md-12 text-right">
+		<input type="submit" />
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+              </div>
+            </div>
+          </fieldset>
+          </form>
+        </div>
+-->
+
+{% endblock %}
+

@@ -1,0 +1,15 @@
+import flask, flask.views
+import os
+import utils
+
+class Start(flask.views.MethodView):
+	@utils.login_required
+	def get(self):
+		return flask.render_template('water.html')
+
+	@utils.login_required
+	def post(self):
+		result = os.system("python /home/pi/waterServer/soilSensor.py")
+#		result = eval(flask.request.form['expression'])
+#		flask.flash(result)
+		return flask.redirect(flask.url_for('water'))
