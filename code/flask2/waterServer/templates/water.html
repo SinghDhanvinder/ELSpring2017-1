@@ -1,0 +1,88 @@
+
+{% extends "base.html" %}
+{% block body %}
+
+<div class="container">
+  <h2>Panel</h2>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Pump</a></li>
+    <li><a data-toggle="tab" href="#menu1" onclick="loadTemp()">Temperature</a></li>
+    <li><a data-toggle="tab" href="#menu2" onclick="loadChart()">Chart</a></li>
+    <li><a data-toggle="tab" href="#menu3">Start System</a></li>
+   <!--- <li><a data-toggle="tab" href="#menu3">Pump</a></li>-->
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>Water Pump</h3>
+      <p>Start the water pump manually</p>
+	<form action="{{url_for('water')}}" method="post">
+	   <button class="btn btn-success btn-lg" type="submit" value="Water">Pump</button>
+
+  <div class="row">
+        <div class="col-sm-3">
+        </div>
+        <div class="col-sm-6">
+  <div id="chart_div"></div>
+        </div>
+   </div>
+
+
+    </div>
+    <div id="menu1" class="tab-pane fade" a href="#" >
+      <h3>Temperature</h3>
+      <p>Past and current temperature</p>
+		<script>
+			function loadTemp(){
+				document.getElementById("menu1").innerHTML='<object type="text/html" data="/temp/" style="width: 100%; height: 100vh;"></object>';
+			}
+		</script>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Charts</h3>
+      <p>Historical data for humidity and temperature readings</p>
+		<script>
+			function loadChart(){
+				document.getElementById("menu2").innerHTML='<object type="text/html" data="/chart/" style="width: 100%; height: 100vh;"></object>';
+			}
+		</script>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Start</h3>
+      <p>Start the system</p>
+	<form action="{{url_for('water')}}" method="post">
+	   <button class="btn btn-success btn-lg" type="submit" value="Start">Start</button>    </div>
+  </div>
+</div>
+<!--
+
+<div class="container">
+   <div class="row">
+	<div class="col-md-4 col-md-offset-2">	
+	<h2>Pump Activation</h2>
+
+	<form action="{{url_for('water')}}" method="post">
+		<button class="btn btn-success" type="submit" value="Execute">
+			<i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></button>
+	</form>
+	</div>
+   </div>
+
+  <div class="row">
+	<div class="col-sm-3">
+	</div>
+	<div class="col-sm-6">
+  <div id="chart_div"></div>
+	</div>
+   </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+{% endblock %}

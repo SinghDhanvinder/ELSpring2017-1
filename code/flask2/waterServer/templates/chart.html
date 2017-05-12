@@ -1,0 +1,73 @@
+<html>
+	<!--	<title>AquaPi-Self Watering Plant System</title>
+		<link rel="shortcut icon" href="{{url_for('static',filename='favicon.ico')}}"/>
+		<link rel="stylesheet" type="text/css" href="/static/style.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<script src="https://use.fontawesome.com/0ff0d2b49f.js"></script>
+	-->
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<!--
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+-->
+
+
+<div id="chart_div"></div>
+<script>
+google.charts.load('current', {packages: ['corechart', 'line']});
+google.charts.setOnLoadCallback(drawAxisTickColors);
+
+function drawAxisTickColors() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Time');
+      data.addColumn('number', 'Temp');
+      data.addColumn('number', 'Hum');
+
+      data.addRows([
+        {{ result1|safe }}
+      ]);
+
+      var options = {
+        hAxis: {
+          title: 'Time',
+          textStyle: {
+            color: '#01579b',
+            fontSize: 20,
+            fontName: 'Arial',
+            bold: true,
+            italic: true
+          },
+          titleTextStyle: {
+            color: '#01579b',
+            fontSize: 16,
+            fontName: 'Arial',
+            bold: false,
+            italic: true
+          }
+        },
+        vAxis: {
+          title: 'Temp',
+          textStyle: {
+            color: '#1a237e',
+            fontSize: 24,
+            bold: true
+          },
+          titleTextStyle: {
+            color: '#1a237e',
+            fontSize: 24,
+            bold: true
+          }
+        },
+        colors: ['#a52714', '#097138']
+      };
+      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+
+</script>
+
+</html>
